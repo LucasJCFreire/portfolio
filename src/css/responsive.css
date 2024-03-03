@@ -17,17 +17,22 @@
 }
 
 @media (max-width: 768px) {
-    .header .header-navegation ul {
-        display: none;
-        width: 250px;
-        background-color: var(--color-secundary);
-        padding: 10px;
+    html {
+        font-size: 55%;
     }
 
     .header {
         grid-template-areas:
             "theme-toggle title";
         grid-template-columns: 0 auto;
+        min-height: 70px;
+    }
+
+    .header .header-navegation ul {
+        display: none;
+        width: 250px;
+        background-color: var(--color-secundary);
+        padding: 10px;
     }
 
     .header .header-navegation label .menu {
@@ -53,5 +58,69 @@
         display: block;
         text-align: center;
         padding: 20px;
+    }
+
+    .header .header-navegation label .menu {
+        position: relative;
+        top: -15px;
+        right: -30px;
+    }
+
+    .header .theme-toggle {
+        height: 40px;
+        width: 40px;
+    }
+
+    .home {
+        grid-template-areas:
+            "home-image home-image"
+            "home-message home-message";
+        grid-template-columns: 1fr;
+        grid-template-rows: calc((100vh - 70px)*0.5) calc((100vh - 70px)*0.5);
+    }
+
+    .home .home-message {
+        align-items: center;
+        margin: 0 20px;
+    }
+
+    .home .home-message .welcome-text {
+        text-align: center;
+    }
+
+    .home .home-message .welcome-text p {
+        display: none;
+    }
+
+    .home .home-message .welcome-text h2 {
+        margin: 10px;
+    }
+    
+    .home .home-message .social-profiles i {
+        margin: 10px 20px;
+    }
+    
+    .home .home-image {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 576px) {
+    html {
+        font-size: 45%;
+    }
+
+    .header .title p {
+        display: none;
+    }
+
+    .header .title::after {
+        content: "LJ Dev";
+    }
+
+    .header .header-navegation label .menu {
+        position: relative;
+        top: -15px;
+        right: -50px;
     }
 }
