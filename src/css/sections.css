@@ -1,0 +1,12 @@
+html {
+    font-size: 62.5%;
+    font-family: var(--font-primary);
+}
+
+body {
+    background-color: var(--color-background);
+    display: grid;
+    grid-template-areas:
+        "header header header header";
+    grid-template-columns: repeat(4,1fr);
+}
