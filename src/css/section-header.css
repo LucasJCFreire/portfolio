@@ -11,7 +11,8 @@
 
 .header .title {
     grid-area: title;
-    font-size: var(--font-size-large);
+    font-family: var(--font-heading);
+    font-size: var(--font-size-extra-large);
     color: var(--color-primary);
     font-weight: bold;
     transition: 0.3s ease-in-out;
@@ -35,6 +36,7 @@
 }
 
 .header .header-navegation ul li a {
+    font-family: var(--font-heading);
     color: var(--color-primary);
     font-size: var(--font-size-medium);
     font-weight: bold;
@@ -127,5 +129,5 @@
 }
 
 .header .theme-toggle i {
-    font-size: var(--font-size-large);
+    font-size: var(--font-size-extra-large);
 }

@@ -1,0 +1,148 @@
+.about {
+    grid-area: about;
+    display: grid;
+    grid-template-areas:
+        "about-title"
+        "about-description"
+        "about-links";
+    grid-template-columns: 1fr;
+    grid-template-rows: 170px calc(100vh - 250px) 80px;
+    height: 100vh;
+}
+
+.about .about-title {
+    grid-area: about-title;
+    padding: 20px 40px;
+}
+
+.about .about-title h1{
+    font-family: var(--font-heading);
+    font-size: var(--font-size-extra-large);
+    font-weight: bold;
+    color: var(--color-primary);
+}
+
+.about .about-title h1 span{
+    color: var(--color-accent);
+}
+
+.about .about-title p{
+    font-family: var(--font-secundary);
+    font-size: var(--font-size-extra-large);
+    font-weight: bold;
+    color: var(--color-primary);
+    text-align: center;
+}
+
+.about .about-description {
+    grid-area: about-description;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about .about-description .about-box-description{
+    width: 75%;
+    height: 90%;
+    box-shadow: 0 27px 49px -25px rgba(0, 0, 0, 0.3);
+    background-color: var(--color-element-background);
+    display: flex;
+    flex-direction: column;
+    border-radius: 30px;
+    position: relative;
+}
+
+.about .about-description .about-box-description img{
+    position: absolute;
+    left: -10%;
+    height: auto;
+    width: 30%;
+    margin: auto 0;
+    top: 50%;
+    transform: translatey(-50%);
+}
+
+.about .about-description h2{
+    font-family: var(--font-secundary);
+    font-size: var(--font-size-large);
+    text-align: center;
+    font-weight: bold;
+    color: var(--color-primary);
+    margin: 15px;
+    align-self: center;
+}
+
+.about .about-description h2 span{
+    font-size: var(--font-size-extra-large);
+    color: var(--color-accent);
+}
+
+.about .about-description .about-buttom{
+    display: flex;
+    align-self: center;
+    scale: 3;
+    height: 60px;
+}
+
+.about .about-description .about-buttom input{
+    margin-bottom: 15px;
+}
+
+.about .about-description .about-buttom input:hover{
+    cursor: pointer;
+}
+
+.about .about-description .about-buttom input:not(:last-child){
+    margin-right: 30px;
+}
+
+.about .about-description .about-text{
+    flex: 1;
+    margin-left: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.about .about-description .about-text p{
+    font-family: var(--font-secundary);
+    font-size: var(--font-size-large);
+    color: var(--color-primary);
+    font-weight: 400;
+    margin: 15px 40px;
+    text-align: justify;
+    display: none;
+}
+
+.about .about-description p span{
+    color: var(--color-accent);
+}
+
+.about .about-description .about-text p.toogle-ON{
+    display: block;
+}
+
+.about .about-links{
+    grid-area: about-links;
+    display: flex;
+    justify-content: center;
+}
+
+.about .about-links .links{
+    display: flex;
+    width: 50%;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.about .about-links a{
+    font-size: var(--font-size-super-large);
+    color: var(--color-primary);
+    padding: 0 15px;
+    justify-content: space-around;
+    transition: 0.3s ease-in-out;
+}
+
+.about .about-links a:hover{
+    color: var(--color-accent);
+}

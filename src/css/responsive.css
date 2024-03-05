@@ -14,13 +14,39 @@
     .header .header-navegation ul {
         justify-content: center;
     }
+
+    .about .about-description .about-text p {
+        font-size: var(--font-size-medium);
+    }
 }
 
-@media (max-width: 768px) {
-    html {
-        font-size: 55%;
+@media (max-width: 992px) {
+    .about .about-title {
+        padding-bottom: 5px;
     }
 
+    .about .about-description .about-box-description {
+        height: 95%;
+        width: 78%;
+    }
+    
+    .about .about-description .about-buttom {
+        scale: 2.5;
+        height: 50px;
+    }
+}
+
+@media (max-width: 850px) {
+    .about {
+        grid-template-rows: 120px calc(100vh - 200px) 80px;
+    }
+
+    .about .about-title p {
+        font-size: var(--font-size-medium);
+    }
+}
+
+@media (max-width: 800px) {
     .header {
         grid-template-areas:
             "theme-toggle title";
@@ -62,7 +88,7 @@
 
     .header .header-navegation label .menu {
         position: relative;
-        top: -15px;
+        top: -13px;
         right: -30px;
     }
 
@@ -81,7 +107,8 @@
 
     .home .home-message {
         align-items: center;
-        margin: 0 20px;
+        justify-content: flex-start;
+        margin: 20px 20px;
     }
 
     .home .home-message .welcome-text {
@@ -93,34 +120,94 @@
     }
 
     .home .home-message .welcome-text h2 {
-        margin: 10px;
+        margin: 25px;
     }
-    
+
     .home .home-message .social-profiles i {
-        margin: 10px 20px;
+        margin: 25px 20px;
     }
-    
+
     .home .home-image {
         justify-content: center;
     }
 }
 
-@media (max-width: 576px) {
-    html {
-        font-size: 45%;
+@media (max-width: 750px) {
+    .about .about-description .about-box-description img {
+        left: -12%;
+        top: 20%;
+        opacity: 0.8;
     }
 
+    .about .about-description .about-text {
+        margin-left: 0%;
+        z-index: 1;
+    }
+
+    .about .about-description .about-text p {
+        margin: 15px 20px;
+    }
+}
+
+@media (max-width: 576px) {
     .header .title p {
         display: none;
     }
 
     .header .title::after {
-        content: "LJ Dev";
+        content: "Lucas Jones";
     }
 
     .header .header-navegation label .menu {
         position: relative;
-        top: -15px;
-        right: -50px;
+        top: -13px;
+        right: -40px;
+    }
+
+    .home .home-message .welcome-text h1 {
+        font-size: var(--font-size-large);
+    }
+
+    .home .home-message .welcome-text h2 {
+        font-size: var(--font-size-base);
+    }
+
+    .home .home-message a p {
+        font-size: var(--font-size-base);
+    }
+
+    .about .about-title {
+        padding: 10px 10px;
+    }
+
+    .about .about-title h1 {
+        font-size: var(--font-size-large);
+    }
+
+    .about .about-title p {
+        font-size: var(--font-size-base);
+    }
+
+    .about .about-description h2 {
+        margin: 5px;
+    }
+
+    .about .about-description .about-text p {
+        font-size: var(--font-size-base);
+    }
+
+}
+
+@media (max-width: 375px) {
+    .header .title::after {
+        content: "Jones";
+    }
+
+    .about .about-title h1 {
+        font-size: var(--font-size-base);
+    }
+
+    .about .about-description .about-text p {
+        font-size: var(--font-size-small);
     }
 }

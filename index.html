@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="./src/css/sections.css">
     <link rel="stylesheet" href="./src/css/section-header.css">
     <link rel="stylesheet" href="./src/css/section-home.css">
+    <link rel="stylesheet" href="./src/css/section-about.css">
     <link rel="stylesheet" href="./src/css/responsive.css">
     <link rel="shortcut icon" href="./src/images/favico.png" type="image/x-icon">
     <script src="https://kit.fontawesome.com/8bf6940f53.js" crossorigin="anonymous"></script>
@@ -47,21 +48,56 @@
                 <h1>Eu sou desenvolvedor<br>Web Front-end</h1>
                 <h2>Bem vindo ao meu portfólio.</h2>
             </div>
-            <a class="about" href="#about"><p>Mais sobre mim</p></a>
+            <a href="#about"><p>Mais sobre mim</p></a>
             <div class="social-profiles">
-                <a target="_blank" href="https://www.linkedin.com/in/lucasjcfreire/"><i class="fa-brands fa-linkedin"></i></a>
-                <a target="_blank" href="https://github.com/LucasJCFreire"><i class="fa-brands fa-github"></i></a>
+                <a target="_blank" title="Download Currículo" href=""><i class="fa-regular fa-address-card"></i></a>
+                <a target="_blank" title="Acessar Linkedin" href="https://www.linkedin.com/in/lucasjcfreire/"><i class="fa-brands fa-linkedin"></i></a>
+                <a target="_blank" title="Acessar GitHub" href="https://github.com/LucasJCFreire"><i class="fa-brands fa-github"></i></a>
             </div>
         </div>
         <div class="home-image">
             <img src="./src/images/placeholder.jpg" alt="">
         </div>
     </section>
-    <section class="about"></section>
-    <section class="technologies"></section>
+    
+    <section class="about" id="about">
+        <div class="about-title">
+            <h1>Sobre <span>mim</span></h1>
+            <p>"Transformando paixão em código:<br>Um mergulho profissional rumo ao desenvolvimento"</p>
+        </div>
+        <div class="about-description">
+            <div class="about-box-description">
+                <img src="./src/images/placeholder.jpg" alt="">
+                <h2>Meu nome é Jones,<br><span>Lucas Jones</span></h2>
+                <div class="about-text">
+                    <p class="about-text-1 toogle-ON">Meu primeiro contato com <span>programação</span> ocorreu no início de 2015, através do <span>VBA do Microsoft Excel</span>. Na ocasião, nossa equipe precisava documentar alterações em processos produtivos, visando consultas futuras, correções e sistematização. Desenvolvi um projeto em VBA, dotado de uma interface intuitiva e tarefas automatizadas. Optei pelo VBA devido às minhas habilidades prévias com o Excel e à ampla disponibilidade do programa em praticamente todos os computadores, o que o tornava uma escolha viável para nosso propósito. Contudo, as limitações da linguagem me deixaram insatisfeito, o que me motivou a pesquisar por outras tecnologias.</p>
+                    <p class="about-text-2">Na minha busca por novas tecnologias, em uma navegação pelo youtube, me deparei com um vídeo que abordava  a profissão de desenvolvedores front-end e todas as possibilidades que a programação web poderia oferecer. Uma coisa interessante é que, apesar de não ser um programador por formação, sempre busquei <span>soluções tecnológicas</span> para resolver problemas no meu papel como líder de produção. Essas soluções constantes para aprimorar a eficiência no meu ambiente de trabalho despertaram em mim o desejo de fazer uma transição de carreira e me tornar <span>desenvolvedor front-end</span>.</p>
+                    <p class="about-text-3">Desenvolvi habilidades para criar websites, desde a concepção do protótipo até a hospedagem. Este portfólio reflete minhas habilidades. Foi desenvolvido com <span>HTML</span>, <span>CSS</span> e <span>JavaScript</span>, utilizando as técnicas de <span>grid</span> e <span>flexbox</span> consegui alcançar um <span>design responsivo</span> e leve.<br>Estou animado para iniciar novos projetos e continuar aprimorando minhas habilidades.</p>
+                    <p class="about-text-4">Explore a próxima seção do meu portfólio para conhecer as tecnologias com as quais estou familiarizado, e não hesite em entrar em contato comigo. Estou pronto para colaborar e contribuir com nossa equipe para alcançar nossos objetivos.</p>
+                    <span></span>
+                </div>
+                <div class="about-buttom">
+                    <input type="radio" name="radio-bt" checked id="radio-1">
+                    <input type="radio" name="radio-bt" id="radio-2">
+                    <input type="radio" name="radio-bt" id="radio-3">
+                </div>
+            </div>
+        </div>
+        <div class="about-links">
+            <div class="links">
+                <a target="_blank" title="Download Currículo" href=""><i class="fa-regular fa-address-card"></i></a>
+                <a target="_blank" title="Link para Linkedin" href="https://www.linkedin.com/in/lucasjcfreire/"><i class="fa-brands fa-linkedin"></i></a>
+                <a target="_blank" title="Link para Github" href="https://github.com/LucasJCFreire"><i class="fa-brands fa-github"></i></a>
+                <a target="_blank" title="Link para discord" href="https://discord.com/users/lucasjcfreire"><i class="fa-brands fa-discord"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- <section class="technologies"></section>
     <section class="projects"></section>
-    <section class="contacts"></section>
+    <section class="contacts"></section> -->
     <script type="text/javascript" src="./src/js/theme-toggle.js"></script>
+    <script type="text/javascript" src="./src/js/slider-about.js" ></script>
 </body>
 
 </html>

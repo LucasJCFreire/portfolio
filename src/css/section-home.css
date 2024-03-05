@@ -28,7 +28,7 @@
 
 .home .home-message .welcome-text h1 {
     color: var(--color-accent);
-    font-size: var(--font-size-large);
+    font-size: var(--font-size-extra-large);
     font-weight: bold;
 }
 
@@ -55,7 +55,7 @@
 
 .home .home-message .social-profiles i {
     color: var(--color-primary);
-    font-size: var(--font-size-extra-large);
+    font-size: var(--font-size-super-large);
     margin: 30px 20px;
     transition: 0.3s ease-in-out;
 }

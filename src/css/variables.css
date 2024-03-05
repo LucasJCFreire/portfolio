@@ -2,7 +2,7 @@
     --color-primary: #1F2235;
     --color-secundary: #F8F8FF;
     --color-background: #e5e5e5;
-    --color-text: #343a40;
+    --color-element-background:#fff;
     --color-accent: #FF4A57;
 }
 
@@ -10,17 +10,18 @@
     --color-primary: #F8F8FF;
     --color-secundary: #1F2235;
     --color-background: #1F2235;    
-    --color-text: #343a40;
+    --color-element-background:#161c2d;
     --color-accent: #FF4A57;
 }
 
 :root {
     --font-primary: 'Michroma', monospace;
     --font-secundary: "Roboto", sans-serif;
-    --font-heading: 'Poppins', sans-serif;
+    --font-heading: 'Michroma', monospace;
     --font-size-small: 1.2rem;
     --font-size-base: 1.6rem;
     --font-size-medium: 2rem;
-    --font-size-large: 3rem;
-    --font-size-extra-large: 4rem;
+    --font-size-large: 2.5rem;
+    --font-size-extra-large: 3rem;
+    --font-size-super-large: 4rem;
 }
