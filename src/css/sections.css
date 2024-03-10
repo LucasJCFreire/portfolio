@@ -1,14 +1,15 @@
 html {
     font-size: 62.5%;
-    font-family: var(--font-primary);
+    color: var(--color-primary);
+    font-weight: 300;
+    scroll-behavior: smooth;
 }
 
 body {
     background-color: var(--color-background);
-    display: grid;
-    grid-template-areas:
-        "header header header header"
-        "home home home home"
-        "about about about about";
-    grid-template-columns: repeat(4,1fr);
+    font-family: var(--font-primary);
+    font-size: var(--font-size-base);
+    min-width: 350px;
+    max-width: 1300px;
+    margin: auto;
 }

@@ -4,21 +4,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Michroma&family=Poppins:wght@700;900&family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Michroma&family=Roboto:wght@400;700;900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="./src/css/reset.css">
-    <link rel="stylesheet" href="./src/css/variables.css">
     <link rel="stylesheet" href="./src/css/sections.css">
+    <link rel="stylesheet" href="./src/css/variables.css">
     <link rel="stylesheet" href="./src/css/section-header.css">
     <link rel="stylesheet" href="./src/css/section-home.css">
     <link rel="stylesheet" href="./src/css/section-about.css">
+    <link rel="stylesheet" href="./src/css/section-technologies.css">
     <link rel="stylesheet" href="./src/css/responsive.css">
     <link rel="shortcut icon" href="./src/images/favico.png" type="image/x-icon">
     <script src="https://kit.fontawesome.com/8bf6940f53.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
     <title>Lucas Jones Developer</title>
 </head>
 
 <body>
-
     <section class="header" id="header">
         <a href="#header" class="title">
             <p>Lucas Jones Dev</p>
@@ -34,7 +36,6 @@
                 <li><a href="#about">Sobre mim</a></li>
                 <li><a href="#technologies">Tecnologias</a></li>
                 <li><a href="#projects">Projetos</a></li>
-                <li><a href="#contacts">Contatos</a></li>
             </ul>
         </nav>
         <div class="theme-toggle">
@@ -48,18 +49,29 @@
                 <h1>Eu sou desenvolvedor<br>Web Front-end</h1>
                 <h2>Bem vindo ao meu portfólio.</h2>
             </div>
-            <a href="#about"><p>Mais sobre mim</p></a>
+            <a href="#about">
+                <p>Mais sobre mim</p>
+            </a>
             <div class="social-profiles">
-                <a target="_blank" title="Download Currículo" href=""><i class="fa-regular fa-address-card"></i></a>
-                <a target="_blank" title="Acessar Linkedin" href="https://www.linkedin.com/in/lucasjcfreire/"><i class="fa-brands fa-linkedin"></i></a>
-                <a target="_blank" title="Acessar GitHub" href="https://github.com/LucasJCFreire"><i class="fa-brands fa-github"></i></a>
+                <a target="_blank" title="Download Currículo" href="">
+                    <i class="fa-regular fa-address-card"></i>
+                </a>
+                <a target="_blank" title="Acessar Linkedin" href="https://www.linkedin.com/in/lucasjcfreire/">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+                <a target="_blank" title="Acessar GitHub" href="https://github.com/LucasJCFreire">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+                <a target="_blank" title="Acessar GitHub" href="https://wa.me/5512997408541">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </a>
             </div>
         </div>
         <div class="home-image">
             <img src="./src/images/placeholder.jpg" alt="">
         </div>
     </section>
-    
+
     <section class="about" id="about">
         <div class="about-title">
             <h1>Sobre <span>mim</span></h1>
@@ -67,37 +79,276 @@
         </div>
         <div class="about-description">
             <div class="about-box-description">
+                <input type="radio" name="radio-bt" checked id="radio-1">
+                <input type="radio" name="radio-bt" id="radio-2">
+                <input type="radio" name="radio-bt" id="radio-3">
+                <ul>
+                    <li><label for="radio-1" class="text-about-1"></label></li>
+                    <li><label for="radio-2" class="text-about-2"></label></li>
+                    <li><label for="radio-3" class="text-about-3"></label></li>
+                </ul>
                 <img src="./src/images/placeholder.jpg" alt="">
                 <h2>Meu nome é Jones,<br><span>Lucas Jones</span></h2>
-                <div class="about-text">
-                    <p class="about-text-1 toogle-ON">Meu primeiro contato com <span>programação</span> ocorreu no início de 2015, através do <span>VBA do Microsoft Excel</span>. Na ocasião, nossa equipe precisava documentar alterações em processos produtivos, visando consultas futuras, correções e sistematização. Desenvolvi um projeto em VBA, dotado de uma interface intuitiva e tarefas automatizadas. Optei pelo VBA devido às minhas habilidades prévias com o Excel e à ampla disponibilidade do programa em praticamente todos os computadores, o que o tornava uma escolha viável para nosso propósito. Contudo, as limitações da linguagem me deixaram insatisfeito, o que me motivou a pesquisar por outras tecnologias.</p>
-                    <p class="about-text-2">Na minha busca por novas tecnologias, em uma navegação pelo youtube, me deparei com um vídeo que abordava  a profissão de desenvolvedores front-end e todas as possibilidades que a programação web poderia oferecer. Uma coisa interessante é que, apesar de não ser um programador por formação, sempre busquei <span>soluções tecnológicas</span> para resolver problemas no meu papel como líder de produção. Essas soluções constantes para aprimorar a eficiência no meu ambiente de trabalho despertaram em mim o desejo de fazer uma transição de carreira e me tornar <span>desenvolvedor front-end</span>.</p>
-                    <p class="about-text-3">Desenvolvi habilidades para criar websites, desde a concepção do protótipo até a hospedagem. Este portfólio reflete minhas habilidades. Foi desenvolvido com <span>HTML</span>, <span>CSS</span> e <span>JavaScript</span>, utilizando as técnicas de <span>grid</span> e <span>flexbox</span> consegui alcançar um <span>design responsivo</span> e leve.<br>Estou animado para iniciar novos projetos e continuar aprimorando minhas habilidades.</p>
-                    <p class="about-text-4">Explore a próxima seção do meu portfólio para conhecer as tecnologias com as quais estou familiarizado, e não hesite em entrar em contato comigo. Estou pronto para colaborar e contribuir com nossa equipe para alcançar nossos objetivos.</p>
-                    <span></span>
-                </div>
-                <div class="about-buttom">
-                    <input type="radio" name="radio-bt" checked id="radio-1">
-                    <input type="radio" name="radio-bt" id="radio-2">
-                    <input type="radio" name="radio-bt" id="radio-3">
+                <div class="text-description">
+                    <div class="about-text first-about-text">
+                        <p>Meu primeiro contato com <span>programação</span> ocorreu no início de 2015, através do
+                            <span>VBA do Microsoft Excel</span>. Na ocasião, nossa equipe precisava documentar
+                            alterações em processos produtivos, visando consultas futuras, correções e sistematização.
+                            Desenvolvi um projeto em VBA, dotado de uma interface intuitiva e tarefas automatizadas.
+                            Optei pelo VBA devido às minhas habilidades prévias com o Excel e à ampla disponibilidade do
+                            programa em praticamente todos os computadores, o que o tornava uma escolha viável para
+                            nosso propósito. Contudo, as limitações da linguagem me deixaram insatisfeito, o que me
+                            motivou a pesquisar por outras tecnologias.</p>
+                    </div>
+                    <div class="about-text">
+                        <p>Na minha busca por novas tecnologias, em uma navegação pelo youtube, me deparei com um vídeo
+                            que abordava a profissão de desenvolvedores front-end e todas as possibilidades que a
+                            programação web poderia oferecer. Uma coisa interessante é que, apesar de não ser um
+                            programador por formação, sempre busquei <span>soluções tecnológicas</span> para resolver
+                            problemas no meu papel como líder de produção. Essas soluções constantes para aprimorar a
+                            eficiência no meu ambiente de trabalho despertaram em mim o desejo de fazer uma transição de
+                            carreira e me tornar <span>desenvolvedor front-end</span>.</p>
+                    </div>
+                    <div class="about-text">
+                        <p>Desenvolvi habilidades para criar websites, desde a concepção do protótipo até a hospedagem.
+                            Este portfólio reflete minhas habilidades. Foi desenvolvido com <span>HTML</span>,
+                            <span>CSS</span> e <span>JavaScript</span>, utilizando as técnicas de <span>grid</span> e
+                            <span>flexbox</span> consegui alcançar um <span>design responsivo</span> e leve.<br>Estou
+                            animado para iniciar novos projetos e continuar aprimorando minhas habilidades.<br>Explore a
+                            próxima seção do meu portfólio para conhecer as tecnologias com as quais estou
+                            familiarizado, e não hesite em entrar em contato comigo. Estou pronto para colaborar e
+                            contribuir com nossa equipe para alcançar nossos objetivos.</p>
+                    </div>
                 </div>
             </div>
         </div>
         <div class="about-links">
             <div class="links">
-                <a target="_blank" title="Download Currículo" href=""><i class="fa-regular fa-address-card"></i></a>
-                <a target="_blank" title="Link para Linkedin" href="https://www.linkedin.com/in/lucasjcfreire/"><i class="fa-brands fa-linkedin"></i></a>
-                <a target="_blank" title="Link para Github" href="https://github.com/LucasJCFreire"><i class="fa-brands fa-github"></i></a>
-                <a target="_blank" title="Link para discord" href="https://discord.com/users/lucasjcfreire"><i class="fa-brands fa-discord"></i></a>
+                <a target="_blank" title="Download Currículo" href="">
+                    <i class="fa-regular fa-address-card"></i>
+                </a>
+                <a target="_blank" title="Link para Linkedin" href="https://www.linkedin.com/in/lucasjcfreire/">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+                <a target="_blank" title="Link para Github" href="https://github.com/LucasJCFreire">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+                <a target="_blank" title="Link para discord" href="https://discord.com/users/lucasjcfreire">
+                    <i class="fa-brands fa-discord"></i>
+                </a>
             </div>
         </div>
     </section>
 
-    <!-- <section class="technologies"></section>
+    <section class="technologies" id="technologies">
+        <div class="technologies-title">
+            <h1>Tecnologias<span> / </span>Habilidades</h1>
+        </div>
+        <div class="technologies-description">
+            <div class="technologies-hard-skills">
+                <h2 class="title-skills">Hard Skills</h2>
+                <div class="technologies-element-acordeon">
+                    <div class="acordeon-fixed-box">
+                        <div class="box-icon">
+                            <div class="icon-plus"></div>
+                            <div class="icon-minus"></div>
+                        </div>
+                        <div class="acordeon-title">
+                            <p>HTML</p>
+                        </div>
+                    </div>
+                    <div class="acordeon-box-click">
+                        <p class="acordeon-text">Com a conclusão dos módulos de HTML avançado do curso de especialização
+                            em desenvolvimento fullstack Dev Quest, estou confortável com a linguagem HTML e suas
+                            aplicações. Me considero apto para criar e estruturar conteúdos web nesta linguagem
+                            utilizando uma ampla variedade de recursos disponíveis.</p>
+                        <i class="devicon-html5-plain"></i>
+                    </div>
+                </div>
+                <div class="technologies-element-acordeon">
+                    <div class="acordeon-fixed-box">
+                        <div class="box-icon">
+                            <div class="icon-plus"></div>
+                            <div class="icon-minus"></div>
+                        </div>
+                        <div class="acordeon-title">
+                            <p>CSS</p>
+                        </div>
+                    </div>
+                    <div class="acordeon-box-click">
+                        <p class="acordeon-text">Após a conclusão dos módulos avançados de CSS do curso de
+                            especialização em desenvolvimento fullstack Dev Quest, possuo habilidades sólidas para
+                            estilizar e criar layouts responsivos utilizando flexbox, grid e media queries. Estou
+                            preparado para aplicar esses conhecimentos em projetos práticos.</p>
+                        <i class="devicon-css3-plain"></i>
+                    </div>
+                </div>
+
+                <div class="technologies-element-acordeon">
+                    <div class="acordeon-fixed-box">
+                        <div class="box-icon">
+                            <div class="icon-plus"></div>
+                            <div class="icon-minus"></div>
+                        </div>
+                        <div class="acordeon-title">
+                            <p>JAVASCRIPT</p>
+                        </div>
+                    </div>
+                    <div class="acordeon-box-click">
+                        <p class="acordeon-text">Reconheço a amplitude desta linguagem, continuo estudando e estou
+                            ciente de que ainda há muito a aprender. Porém, considero que estou progredindo de forma
+                            significativa em minha jornada. Estou comprometido em continuar desenvolvendo minhas
+                            habilidades nesta linguagem, e acredito que já posso contribuir em projetos reais.</p>
+                        <i class="devicon-javascript-plain"></i>
+                    </div>
+                </div>
+
+                <div class="technologies-element-acordeon">
+                    <div class="acordeon-fixed-box">
+                        <div class="box-icon">
+                            <div class="icon-plus"></div>
+                            <div class="icon-minus"></div>
+                        </div>
+                        <div class="acordeon-title">
+                            <p>GIT</p>
+                        </div>
+                    </div>
+                    <div class="acordeon-box-click">
+                        <p class="acordeon-text">Desde que comecei minha jornada na formação de desenvolvedor, tenho
+                            seguido a recomendação de utilizar o Git para versionamento dos códigos. Entendo a
+                            finalidade e a importância dessa ferramenta e tenho me empenhado em utilizá-la ativamente
+                            para praticar. Como terminal, utilizo o Git Bash para realizar as operações de forma
+                            eficiente.</p>
+                        <i class="devicon-git-plain"></i>
+                    </div>
+                </div>
+
+                <div class="technologies-element-acordeon">
+                    <div class="acordeon-fixed-box">
+                        <div class="box-icon">
+                            <div class="icon-plus"></div>
+                            <div class="icon-minus"></div>
+                        </div>
+                        <div class="acordeon-title">
+                            <p>GRADUAÇÃO - EM PROCESSO</p>
+                        </div>
+                    </div>
+                    <div class="acordeon-box-click">
+                        <div class="university-box">
+                            <p>Com a decisão de transição de carreira, iniciei minha graduação em Análise e
+                                Desenvolvimento de Sistemas com o objetivo de aprimorar minhas habilidades como
+                                programador. Essa decisão visa ampliar meus conhecimentos, construir uma base teórica
+                                sólida e desenvolver novas habilidades para minha nova jornada profissional. Ao
+                                mergulhar em disciplinas que abrangem desde algoritmos até
+                                desenvolvimento de software, estou me preparando para enfrentar os desafios do mercado
+                                de trabalho em constante evolução. </p>
+                            <img src="./src/images/ads.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="timeline-skills">
+                <h2 class="title-skills">Road-Map - Plano de desenvolvimento</h2>
+                <input type="radio" name="steps-time-line" id="step-1" checked>
+                <input type="radio" name="steps-time-line" id="step-2">
+                <input type="radio" name="steps-time-line" id="step-3">
+                <input type="radio" name="steps-time-line" id="step-4">
+                <input type="radio" name="steps-time-line" id="step-5">
+
+                <div class="time-line-steps">
+                    <ul>
+                        <li><label for="step-1"><i class="devicon-react-original"></i></label></li>
+                        <li><label for="step-2"><i class="devicon-redux-original"></i></label></li>
+                        <li><label for="step-3"><i class="devicon-typescript-plain"></i></label></li>
+                        <li><label for="step-4"><i class="fa-solid fa-laptop-code"></i></label></li>
+                        <li><label for="step-5"><i class="fa-solid fa-clipboard-check"></i></label></li>
+                    </ul>
+                    <div class="progress-line">
+                        <div class="line"></div>
+                    </div>
+                </div>
+
+                <div class="description-steps">
+                    <div>
+                        <h2>React</h2>
+                        <p>Após consolidar meu conhecimento em HTML, CSS e JavaScript, meu próximo passo na formação
+                            de desenvolvedor web full stack será React. Estou animado para explorar essa famosa
+                            biblioteca.</p>
+                    </div>
+                    <div>
+                        <h2>Redux</h2>
+                        <p>Após me aprofundar no React, meu próximo passo na formação será o Redux. Em um pesquisa
+                            rápida já sei que com ele terei aplicações mais robustas e organizadas.</p>
+                    </div>
+                    <div>
+                        <h2>Typescript</h2>
+                        <p>Após React e Redux, a próxima para será em TypeScript.</p>
+                    </div>
+                    <div>
+                        <h2>Back-end</h2>
+                        <p>Após React, Redux e TypeScript, irei expandir meu conhecimento da área agora com uma
+                            visão backend.</p>
+                    </div>
+                    <div>
+                        <h2>Dev Fullstack</h2>
+                        <p>Neste ponto estarei preparado para me tornar um desenvolvedor Web Full Stack</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="technologies-solft-skill">
+                <h2 class="title-skills">Soft Skills</h2>
+                <p class="subtitle-skills">Habilidades adquiridas como Líder de produção que considero transferiveis
+                    para área de programação</p>
+                <div class="soft-skills-box">
+                    <input type="radio" name="radio-btn" id="radio1" checked>
+                    <input type="radio" name="radio-btn" id="radio2">
+                    <input type="radio" name="radio-btn" id="radio3">
+                    <input type="radio" name="radio-btn" id="radio4">
+                    <ul>
+                        <li><label for="radio1" class="slide1"></label></li>
+                        <li><label for="radio2" class="slide2"></label></li>
+                        <li><label for="radio3" class="slide3"></label></li>
+                        <li><label for="radio4" class="slide4"></label></li>
+                    </ul>
+                    <div class="slide first">
+                        <h2>Trabalho em Equipe</h2>
+                        <div class="image">
+                            <img src="./src/images/placeholder.jpg" alt="">
+                        </div>
+                        <p>Experiência em trabalhar com equipes multidisciplinares e diferentes áreas para alcançar os
+                            objetivos organizacionais.</p>
+                    </div>
+                    <div class="slide">
+                        <h2>Pensamento Analítico</h2>
+                        <div class="image">
+                            <img src="./src/images/placeholder.jpg" alt="">
+                        </div>
+                        <p>Analisar informações e dados para compreender melhor um problema para tomada de decisão</p>
+                    </div>
+                    <div class="slide">
+                        <h2>Gestão do Tempo e Priorização</h2>
+                        <div class="image">
+                            <img src="./src/images/placeholder.jpg" alt="">
+                        </div>
+                        <p>Experiência em lidar com múltiplas tarefas e priorizar atividades para alcançar metas.</p>
+                    </div>
+                    <div class="slide">
+                        <h2>Adaptabilidade e Aprendizado Contínuo</h2>
+                        <div class="image">
+                            <img src="./src/images/placeholder.jpg" alt="">
+                        </div>
+                        <p>A capacidade de se adaptar a novas tecnologias, metodologias e processos.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <section class="projects"></section>
-    <section class="contacts"></section> -->
+    <script type="text/javascript" src="./src/js/slider-soft-skills.js"></script>
     <script type="text/javascript" src="./src/js/theme-toggle.js"></script>
-    <script type="text/javascript" src="./src/js/slider-about.js" ></script>
+    <script type="text/javascript" src="./src/js/slider-about.js"></script>
+    <script type="text/javascript" src="./src/js/acordeon.js"></script>
 </body>
 
 </html>

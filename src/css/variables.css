@@ -18,10 +18,11 @@
     --font-primary: 'Michroma', monospace;
     --font-secundary: "Roboto", sans-serif;
     --font-heading: 'Michroma', monospace;
-    --font-size-small: 1.2rem;
+    --font-size-small: 1.4rem;
     --font-size-base: 1.6rem;
     --font-size-medium: 2rem;
     --font-size-large: 2.5rem;
     --font-size-extra-large: 3rem;
     --font-size-super-large: 4rem;
+    --font-size-mega-large: 5rem;
 }
