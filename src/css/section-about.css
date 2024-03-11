@@ -1,11 +1,10 @@
 .about {
-    grid-area: about;
     display: grid;
     grid-template-areas:
         "about-title"
         "about-description"
         "about-links";
-    grid-template-rows: 170px minmax(580px, 650px) 60px;
+    grid-template-rows: 170px minmax(580px, 650px) 100px;
 }
 
 .about .about-title {

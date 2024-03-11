@@ -1,5 +1,4 @@
 .technologies {
-  grid-area: technologies;
   display: grid;
   grid-template-areas:
     "technologies-title"
@@ -45,7 +44,7 @@
 }
 
 .technologies-hard-skills .technologies-element-acordeon {  
-  /* width: 100%; */
+  min-width: 450px;
 }
 
 .technologies-hard-skills .technologies-element-acordeon .acordeon-fixed-box {
@@ -140,11 +139,6 @@
   margin: 0 20px;
   text-align: justify;
   align-items: center;
-}
-
-.university-box img{
-  margin: 10px 20px;
-  width: 100px;
 }
 
 .university-box p{
@@ -376,8 +370,9 @@
 .technologies-solft-skill {
   display: flex;
   flex-direction: column;
-  width: 600px;
+  width: 500px;
   height: 800px;
+  margin: 20px;
 }
 
 .technologies-solft-skill .subtitle-skills{
@@ -391,7 +386,6 @@
 
 .technologies-solft-skill .soft-skills-box {
   position: relative;
-  margin: auto;
   height: 600px;
   width: 500px;
   border: 2px solid var(--color-primary);
@@ -406,9 +400,9 @@
 .technologies-solft-skill .soft-skills-box ul{
   position: absolute;
   display: flex;
-  top: 75%;
+  top: 73%;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translateX(-48%);
 }
 
 .technologies-solft-skill .soft-skills-box ul li {
@@ -501,9 +495,4 @@
 
 #radio4:checked ~ ul li .slide4{
   background-color: var(--color-primary);
-}
-
-.timeline-skills,
-.technologies-solft-skill{
-  display: none;
 }

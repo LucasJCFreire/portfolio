@@ -1,0 +1,28 @@
+.projects {
+    display: grid;
+    grid-template-areas:
+      "projects-title"
+      "projects-description"
+      "projects-footer";
+    grid-template-rows: 80px calc(100vh - 160px) 80px;
+  }
+  
+  .projects .projects-title {
+    grid-area: projects-title;
+    padding: 20px 40px;
+}
+
+.projects .projects-title h1 {
+    font-family: var(--font-heading);
+    font-size: var(--font-size-extra-large);
+    font-weight: bold;
+    color: var(--color-primary);
+}
+
+  .projects .projects-description{
+    grid-area: projects-description;
+  }
+
+  .projects .projects-footer{
+    grid-area: projets-footer;
+  }

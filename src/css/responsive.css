@@ -58,17 +58,28 @@
         margin: 0;
     }
 
+    .technologies .technologies-title h1,
     .about .about-title h1 {
         font-size: var(--font-size-large);
+    }
+
+    .technologies-description .title-skills{
+        margin: 10px;
     }
 
     .about .about-title p {
         font-size: var(--font-size-large);
     }
 
+    .acordeon-fixed-box .acordeon-title {
+        font-size: var(--font-size-medium);
+    }
+
+    .timeline-skills{
+        display: none;
+    }
 
 }
-
 
 @media (max-width: 768px) {
     .header {
@@ -133,6 +144,81 @@
         min-width: 120px;
         transform: translatey(-50%);
     }
+    
+      .technologies-solft-skill {
+        width: 330px;
+        height: 800px;
+        margin: 0px;
+      }
+      
+      .technologies-solft-skill .subtitle-skills{
+        font-size: var(--font-size-small);
+        margin-bottom: 10px;
+      }
+      
+      .technologies-solft-skill .soft-skills-box {
+        height: 450px;
+        width: 330px;
+      }
+      
+      .technologies-solft-skill .soft-skills-box ul{
+        top: 65%;
+      }
+      
+      .technologies-solft-skill .soft-skills-box .slide{
+        height: 500px;
+        width: 330px;
+      }
+      
+      .technologies-solft-skill .soft-skills-box .slide h2{
+        font-size: var(--font-size-base);
+        text-align: center;
+        margin: 4px;
+        height: auto;
+      }
+      
+      .technologies-solft-skill .soft-skills-box .slide .image{
+        height: 300px;
+        width: 330px;
+        margin: 0 auto;
+      }
+       
+      .technologies-solft-skill .soft-skills-box .slide p{
+        font-size: var(--font-size-small);
+        text-align: center;
+      }
+      
+      #radio1:checked ~ .first{
+        margin-left: 0px;
+      }
+      
+      #radio2:checked ~ .first{
+        margin-left: -330px;
+      }
+      
+      #radio3:checked ~ .first{
+        margin-left: -660px;
+      }
+      
+      #radio4:checked ~ .first{
+        margin-left: -990px;
+      }
+      
+      #radio1:checked ~ ul li .slide1{
+        background-color: var(--color-primary);
+      }
+      
+      #radio2:checked ~ ul li .slide2{
+        background-color: var(--color-primary);
+      }
+      
+      #radio3:checked ~ ul li .slide3{
+        background-color: var(--color-primary);
+      }
+      
+      #radio4:checked ~ ul li .slide4{
+        background-color: var(--color-primary);
+      }
 }
 
 @media (max-width: 576px) {
@@ -176,13 +262,14 @@
     .home .home-message .social-profiles a {
         flex-basis: 35%;
     }
-
+    .technologies .technologies-title h1,
     .about .about-title h1 {
         font-size: var(--font-size-medium);
     }
 
+    .technologies .technologies-title,
     .about .about-title {
-        padding: 0px 20px;
+        padding: 20px;
     }
 
     .about .about-title p {
@@ -217,6 +304,11 @@
         padding: 20px;
         margin: auto;
     }
+
+    .acordeon-fixed-box .acordeon-title {
+        font-size: var(--font-size-base);
+        font-weight: bold;
+    }
 }
 
 @media (max-width: 500px) {
@@ -232,9 +324,14 @@
     .about .about-box-description .text-description {
         padding: 20px 0px;
     }
+
+    .technologies-hard-skills .technologies-element-acordeon {  
+        min-width: 330px;
+      }
 }
 
 @media (max-width: 440px) {
+    .technologies .technologies-title h1,
     .about .about-title h1 {
         font-size: var(--font-size-base);
     }
