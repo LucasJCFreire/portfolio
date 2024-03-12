@@ -4,7 +4,7 @@
       "projects-title"
       "projects-description"
       "projects-footer";
-    grid-template-rows: 80px calc(100vh - 160px) 80px;
+    grid-template-rows: 80px auto 200px;
   }
   
   .projects .projects-title {
@@ -19,10 +19,249 @@
     color: var(--color-primary);
 }
 
-  .projects .projects-description{
-    grid-area: projects-description;
-  }
+.projects .projects-description{
+  grid-area: projects-description;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, 350px);
+  justify-content: space-evenly;
+}
 
-  .projects .projects-footer{
-    grid-area: projets-footer;
-  }
+.projects .projects-description .project{
+  margin: 10px;
+  max-width: 350px;
+  display: flex;
+  flex-direction: column;
+}
+
+.projects .projects-description .project h2{
+  text-align: center;
+  font-family: var(--font-primary);
+  font-size: var(--font-size-medium);
+  color: var(--color-primary);
+  margin: 15px 0;
+}
+
+.projects .projects-description .project .project-image{
+  position: relative;
+  height: 330px;
+}
+
+.projects-description .project .computer-mask{
+  cursor: help;
+  position: absolute;
+  height: auto;
+  width: 350px;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.projects-description .project .computer-responsive{
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 198px;
+  top: 16px;
+  left: 6px;
+  width: 318px;
+  transition: 0.5s ease-in-out;
+}
+
+.projects-description .project .smartphone-mask{
+  cursor: help;
+  position: absolute;
+  height: auto;
+  width: 100px;
+  bottom: 0;
+  right: 10px;
+  z-index: 2;
+}
+
+.projects-description .project .smartphone-responsive{
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 150px;
+  bottom: 12px;
+  right: 12px;
+  width: 95px;
+  z-index: 1;
+  transition: 0.5s ease-in-out;
+}
+
+.projects .projects-description .project .project-info{
+  padding: 20px;
+}
+
+.projects .projects-description .project .project-info p{
+  font-family: var(--font-secundary);
+  font-size: var(--font-size-base);
+  color: var(--color-primary);
+}
+.projects .projects-description .project .project-info p span{
+  color: var(--color-accent);
+}
+
+.projects .projects-description .project .project-info .project-link{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.projects .projects-description .project .project-info .project-link a{
+  background-color: var(--color-primary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
+  height: 40px;
+  width: 100px;
+  border: 1px solid var(--color-primary);
+  border-radius: 20px;
+  transition: 0.3s ease-in-out;
+}
+
+.projects .projects-description .project .project-info .project-link a:hover{
+  opacity: 0.8;
+  background-color: var(--color-accent);
+}
+
+.projects .projects-description .project .project-info .project-link a p{
+  color: var(--color-secundary);
+}
+
+/* Projeto 1 */
+.project-1 .computer-responsive{
+  background-image: url();
+}
+
+.project-1 .computer-mask:hover~ .computer-responsive{
+  background-image: url();
+}
+
+.project-1 .smartphone-responsive{
+  background-image: url();
+}
+
+.project-1 .smartphone-mask:hover~  .smartphone-responsive{
+  background-image: url();
+}
+
+/* projeto 2 */
+.project-2 .computer-responsive{
+  background-image: url(../images/x-men-desktop.png);
+}
+
+.project-2 .computer-mask:hover~ .computer-responsive{
+  background-image: url(../images/x-men-desktop.gif);
+}
+
+.project-2 .smartphone-responsive{
+  background-image: url(../images/x-men-smartphone.png);
+}
+
+.project-2 .smartphone-mask:hover~  .smartphone-responsive{
+  background-image: url(../images/x-men-smartphone.gif);
+}
+
+/* Projeto 3 */
+.project-3 .computer-responsive{
+  background-image: url();
+}
+
+.project-3 .computer-mask:hover~ .computer-responsive{
+  background-image: url();
+}
+
+.project-3 .smartphone-responsive{
+  background-image: url();
+}
+
+.project-3 .smartphone-mask:hover~  .smartphone-responsive{
+  background-image: url();
+}
+
+/* Projeto 4 */
+.project-4 .computer-responsive{
+  background-image: url();
+}
+
+.project-4 .computer-mask:hover~ .computer-responsive{
+  background-image: url();
+}
+
+.project-4 .smartphone-responsive{
+  background-image: url();
+}
+
+.project-4 .smartphone-mask:hover~  .smartphone-responsive{
+  background-image: url();
+}
+
+/* Projeto 5 */
+.project-5 .computer-responsive{
+  background-image: url();
+}
+
+.project-5 .computer-mask:hover~ .computer-responsive{
+  background-image: url();
+}
+
+.project-5 .smartphone-responsive{
+  background-image: url();
+}
+
+.project-5 .smartphone-mask:hover~  .smartphone-responsive{
+  background-image: url();
+}
+
+/* Projeto 6 */
+.project-6 .computer-responsive{
+  background-image: url();
+}
+
+.project-6 .computer-mask:hover~ .computer-responsive{
+  background-image: url();
+}
+
+.project-6 .smartphone-responsive{
+  background-image: url();
+}
+
+.project-6 .smartphone-mask:hover~  .smartphone-responsive{
+  background-image: url();
+}
+
+.projects .projects-footer{
+  grid-area: projects-footer;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.projects .projects-footer .links{
+  display: flex;
+  justify-content: center;
+}
+
+.projects .projects-footer p{
+  font-family: var(--font-secundary);
+  font-size: var(--font-size-medium);
+  color: var(--color-accent);
+  font-weight: 500;
+}
+
+.projects .projects-footer a{
+  color: var(--color-primary);
+  font-size: var(--font-size-mega-large);
+  margin: 10px 20px;
+  transition: 0.3s ease-in-out;
+}
+
+.projects .projects-footer a:hover{
+  color: var(--color-accent);
+  cursor: pointer;
+}

@@ -61,7 +61,7 @@
   display: flex;
   width: 60px;
   height: 60px;
-  margin-right: 25px;
+  /* margin-right: 25px; */
   padding: 15px;
   justify-content: center;
   align-items: center;
@@ -86,10 +86,20 @@
 }
 
 .acordeon-fixed-box .acordeon-title {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  padding: 0 30px;
+  justify-content: space-between;
   font-family: var(--font-secundary);
   font-size: var(--font-size-large);
   color: var(--color-primary);
   font-weight: bold;
+}
+
+.acordeon-fixed-box .acordeon-title i{
+  font-size: var(--font-size-super-large);
+  color: var(--color-primary);
 }
 
 .technologies-hard-skills .technologies-element-acordeon .acordeon-box-click {
@@ -101,11 +111,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.technologies-hard-skills .technologies-element-acordeon .acordeon-box-click i{
-  font-size: var(--font-size-mega-large);
-  color: var(--color-primary);
 }
 
 .technologies-hard-skills .technologies-element-acordeon .acordeon-box-click .acordeon-text{
