@@ -54,32 +54,6 @@
     background-color: var(--color-accent);
 }
 
-.home .home-message .social-profiles{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-}
-
-.home .home-message .social-profiles a{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 50px;
-    margin-top: 20px;
-}
-
-.home .home-message .social-profiles i {
-    color: var(--color-primary);
-    font-size: var(--font-size-super-large);
-    margin: 30px 20px;
-    transition: 0.3s ease-in-out;
-}
-
-.home .home-message .social-profiles i:hover {
-    color: var(--color-accent);
-}
-
 .home .home-image {
     grid-area: home-image;
     display: flex;

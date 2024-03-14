@@ -2,9 +2,8 @@
     display: grid;
     grid-template-areas:
         "about-title"
-        "about-description"
-        "about-links";
-    grid-template-rows: 170px minmax(580px, 650px) 100px;
+        "about-description";
+    grid-template-rows: 170px minmax(580px, 650px);
 }
 
 .about .about-title {
@@ -137,31 +136,6 @@
 }
 
 .about .about-description p span {
-    color: var(--color-accent);
-}
-
-.about .about-links {
-    grid-area: about-links;
-    display: flex;
-    justify-content: center;
-}
-
-.about .about-links .links {
-    display: flex;
-    width: 50%;
-    justify-content: space-evenly;
-    align-items: center;
-}
-
-.about .about-links a {
-    font-size: var(--font-size-super-large);
-    color: var(--color-primary);
-    padding: 0 15px;
-    justify-content: space-around;
-    transition: 0.3s ease-in-out;
-}
-
-.about .about-links a:hover {
     color: var(--color-accent);
 }
 

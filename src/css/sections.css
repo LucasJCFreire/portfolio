@@ -13,3 +13,28 @@ body {
     max-width: 1300px;
     margin: auto;
 }
+
+.icons {
+    /* width: 100%; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.icons a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.icons i {
+    color: var(--color-primary);
+    font-size: var(--font-size-mega-large);
+    transition: 0.3s ease-in-out;
+    padding: 0 10px;
+}
+
+.icons i:hover {
+    color: var(--color-accent);
+}

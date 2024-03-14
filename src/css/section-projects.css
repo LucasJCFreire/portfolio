@@ -101,6 +101,7 @@
   font-size: var(--font-size-base);
   color: var(--color-primary);
 }
+
 .projects .projects-description .project .project-info p span{
   color: var(--color-accent);
 }
@@ -134,19 +135,21 @@
 
 /* Projeto 1 */
 .project-1 .computer-responsive{
-  background-image: url();
+  background-image: url(../images/agencia-xyz-desktop.png);
 }
 
 .project-1 .computer-mask:hover~ .computer-responsive{
-  background-image: url();
+  transition: 0.5s ease-in-out;
+  background-image: url(../images/agencia-xyz-desktop.gif);
 }
 
 .project-1 .smartphone-responsive{
-  background-image: url();
+  background-image: url(../images/agencia-xyz-smartphone.png);
 }
 
 .project-1 .smartphone-mask:hover~  .smartphone-responsive{
-  background-image: url();
+  transition: 0.5s ease-in-out;
+  background-image: url(../images/agencia-xyz-smartphone.gif);
 }
 
 /* projeto 2 */
@@ -155,6 +158,7 @@
 }
 
 .project-2 .computer-mask:hover~ .computer-responsive{
+  transition: 0.5s ease-in-out;
   background-image: url(../images/x-men-desktop.gif);
 }
 
@@ -163,24 +167,27 @@
 }
 
 .project-2 .smartphone-mask:hover~  .smartphone-responsive{
+  transition: 0.5s ease-in-out;
   background-image: url(../images/x-men-smartphone.gif);
 }
 
 /* Projeto 3 */
 .project-3 .computer-responsive{
-  background-image: url();
+  background-image: url(../images/gta-landing-page-desktop.png);
 }
 
 .project-3 .computer-mask:hover~ .computer-responsive{
-  background-image: url();
+  transition: 0.5s ease-in-out;
+  background-image: url(../images/gta-landing-page-desktop.gif);
 }
 
 .project-3 .smartphone-responsive{
-  background-image: url();
+  background-image: url(../images/gta-landing-page-smartphone.png);
 }
 
 .project-3 .smartphone-mask:hover~  .smartphone-responsive{
-  background-image: url();
+  transition: 0.5s ease-in-out;
+  background-image: url(../images/gta-landing-page-smartphone.gif);
 }
 
 /* Projeto 4 */
@@ -189,6 +196,7 @@
 }
 
 .project-4 .computer-mask:hover~ .computer-responsive{
+  transition: 0.5s ease-in-out;
   background-image: url();
 }
 
@@ -197,6 +205,7 @@
 }
 
 .project-4 .smartphone-mask:hover~  .smartphone-responsive{
+  transition: 0.5s ease-in-out;
   background-image: url();
 }
 
@@ -206,6 +215,7 @@
 }
 
 .project-5 .computer-mask:hover~ .computer-responsive{
+  transition: 0.5s ease-in-out;
   background-image: url();
 }
 
@@ -214,6 +224,7 @@
 }
 
 .project-5 .smartphone-mask:hover~  .smartphone-responsive{
+  transition: 0.5s ease-in-out;
   background-image: url();
 }
 
@@ -223,6 +234,7 @@
 }
 
 .project-6 .computer-mask:hover~ .computer-responsive{
+  transition: 0.5s ease-in-out;
   background-image: url();
 }
 
@@ -231,6 +243,7 @@
 }
 
 .project-6 .smartphone-mask:hover~  .smartphone-responsive{
+  transition: 0.5s ease-in-out;
   background-image: url();
 }
 
@@ -242,26 +255,10 @@
   align-items: center;
 }
 
-.projects .projects-footer .links{
-  display: flex;
-  justify-content: center;
-}
-
 .projects .projects-footer p{
   font-family: var(--font-secundary);
   font-size: var(--font-size-medium);
   color: var(--color-accent);
   font-weight: 500;
-}
-
-.projects .projects-footer a{
-  color: var(--color-primary);
-  font-size: var(--font-size-mega-large);
-  margin: 10px 20px;
-  transition: 0.3s ease-in-out;
-}
-
-.projects .projects-footer a:hover{
-  color: var(--color-accent);
-  cursor: pointer;
+  margin: 10px;
 }
