@@ -27,6 +27,7 @@
             "home-image"
             "home-message";
         grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
     }
 
     .home .home-message {

@@ -139,7 +139,7 @@
 }
 
 .project-1 .computer-mask:hover~ .computer-responsive{
-  transition: 0.5s ease-in-out;
+  transition: background-image 0.5s ease-in-out;
   background-image: url(../images/agencia-xyz-desktop.gif);
 }
 
@@ -148,7 +148,7 @@
 }
 
 .project-1 .smartphone-mask:hover~  .smartphone-responsive{
-  transition: 0.5s ease-in-out;
+  transition: background-image 0.5s ease-in-out;
   background-image: url(../images/agencia-xyz-smartphone.gif);
 }
 
@@ -158,7 +158,7 @@
 }
 
 .project-2 .computer-mask:hover~ .computer-responsive{
-  transition: 0.5s ease-in-out;
+  transition: background-image 0.5s ease-in-out;
   background-image: url(../images/x-men-desktop.gif);
 }
 
@@ -167,7 +167,7 @@
 }
 
 .project-2 .smartphone-mask:hover~  .smartphone-responsive{
-  transition: 0.5s ease-in-out;
+  transition: background-image 0.5s ease-in-out;
   background-image: url(../images/x-men-smartphone.gif);
 }
 
@@ -177,7 +177,7 @@
 }
 
 .project-3 .computer-mask:hover~ .computer-responsive{
-  transition: 0.5s ease-in-out;
+  transition: background-image 0.5s ease-in-out;
   background-image: url(../images/gta-landing-page-desktop.gif);
 }
 
@@ -186,7 +186,7 @@
 }
 
 .project-3 .smartphone-mask:hover~  .smartphone-responsive{
-  transition: 0.5s ease-in-out;
+  transition: background-image 0.5s ease-in-out;
   background-image: url(../images/gta-landing-page-smartphone.gif);
 }
 
@@ -196,7 +196,7 @@
 }
 
 .project-4 .computer-mask:hover~ .computer-responsive{
-  transition: 0.5s ease-in-out;
+  transition: background-image 0.5s ease-in-out;
   background-image: url();
 }
 
@@ -205,7 +205,7 @@
 }
 
 .project-4 .smartphone-mask:hover~  .smartphone-responsive{
-  transition: 0.5s ease-in-out;
+  transition: background-image 0.5s ease-in-out;
   background-image: url();
 }
 
@@ -215,7 +215,7 @@
 }
 
 .project-5 .computer-mask:hover~ .computer-responsive{
-  transition: 0.5s ease-in-out;
+  transition: background-image 0.5s ease-in-out;
   background-image: url();
 }
 
@@ -224,7 +224,7 @@
 }
 
 .project-5 .smartphone-mask:hover~  .smartphone-responsive{
-  transition: 0.5s ease-in-out;
+  transition: background-image 0.5s ease-in-out;
   background-image: url();
 }
 
@@ -234,7 +234,7 @@
 }
 
 .project-6 .computer-mask:hover~ .computer-responsive{
-  transition: 0.5s ease-in-out;
+  transition: background-image 0.5s ease-in-out;
   background-image: url();
 }
 
@@ -243,7 +243,7 @@
 }
 
 .project-6 .smartphone-mask:hover~  .smartphone-responsive{
-  transition: 0.5s ease-in-out;
+  transition: background-image 0.5s ease-in-out;
   background-image: url();
 }
 

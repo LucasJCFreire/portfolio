@@ -5,7 +5,6 @@
     grid-template-columns: 1fr 1fr;
     grid-template-rows: calc(100vh - 140px);
     margin: 20px;
-    max-height: 779px;
 }
 
 .home .home-message {
