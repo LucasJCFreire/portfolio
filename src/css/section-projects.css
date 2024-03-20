@@ -192,21 +192,21 @@
 
 /* Projeto 4 */
 .project-4 .computer-responsive{
-  background-image: url();
+  background-image: url(../images/search-github-user-desktop.png);
 }
 
 .project-4 .computer-mask:hover~ .computer-responsive{
   transition: background-image 0.5s ease-in-out;
-  background-image: url();
+  background-image: url(../images/search-github-user-desktop.gif);
 }
 
 .project-4 .smartphone-responsive{
-  background-image: url();
+  background-image: url(../images/search-github-user-smartphone.png);
 }
 
 .project-4 .smartphone-mask:hover~  .smartphone-responsive{
   transition: background-image 0.5s ease-in-out;
-  background-image: url();
+  background-image: url(../images/search-github-user-smartphone.gif);
 }
 
 /* Projeto 5 */
