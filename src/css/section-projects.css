@@ -211,40 +211,40 @@
 
 /* Projeto 5 */
 .project-5 .computer-responsive{
-  background-image: url();
+  background-image: url(../images/clique-dengue-desktop.png);
 }
 
 .project-5 .computer-mask:hover~ .computer-responsive{
   transition: background-image 0.5s ease-in-out;
-  background-image: url();
+  background-image: url(../images/clique-dengue-desktop.gif);
 }
 
 .project-5 .smartphone-responsive{
-  background-image: url();
+  background-image: url(../images/clique-dengue-smartphone.png);
 }
 
 .project-5 .smartphone-mask:hover~  .smartphone-responsive{
   transition: background-image 0.5s ease-in-out;
-  background-image: url();
+  background-image: url(../images/clique-dengue-smartphone.gif);
 }
 
 /* Projeto 6 */
 .project-6 .computer-responsive{
-  background-image: url();
+  background-image: url(../images/portfolio-desktop.png);
 }
 
 .project-6 .computer-mask:hover~ .computer-responsive{
   transition: background-image 0.5s ease-in-out;
-  background-image: url();
+  background-image: url(../images/portfolio-desktop.gif);
 }
 
 .project-6 .smartphone-responsive{
-  background-image: url();
+  background-image: url(../images/portfolio-smartphone.png);
 }
 
 .project-6 .smartphone-mask:hover~  .smartphone-responsive{
   transition: background-image 0.5s ease-in-out;
-  background-image: url();
+  background-image: url(../images/portfolio-smartphone.gif);
 }
 
 .projects .projects-footer{
