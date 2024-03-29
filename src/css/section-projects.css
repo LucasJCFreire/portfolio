@@ -56,7 +56,7 @@
   left: 0;
   z-index: 1;
 }
-
+.computer-permanent,
 .projects-description .project .computer-responsive{
   position: absolute;
   background-repeat: no-repeat;
@@ -79,6 +79,7 @@
   z-index: 2;
 }
 
+.smartphone-permanent,
 .projects-description .project .smartphone-responsive{
   position: absolute;
   background-repeat: no-repeat;
@@ -134,7 +135,7 @@
 }
 
 /* Projeto 1 */
-.project-1 .computer-responsive{
+.project-1 .computer-permanent{
   background-image: url(../images/agencia-xyz-desktop.png);
 }
 
@@ -143,7 +144,7 @@
   background-image: url(../images/agencia-xyz-desktop.gif);
 }
 
-.project-1 .smartphone-responsive{
+.project-1 .smartphone-permanent{
   background-image: url(../images/agencia-xyz-smartphone.png);
 }
 
@@ -153,7 +154,7 @@
 }
 
 /* projeto 2 */
-.project-2 .computer-responsive{
+.project-2 .computer-permanent{
   background-image: url(../images/x-men-desktop.png);
 }
 
@@ -162,7 +163,7 @@
   background-image: url(../images/x-men-desktop.gif);
 }
 
-.project-2 .smartphone-responsive{
+.project-2 .smartphone-permanent{
   background-image: url(../images/x-men-smartphone.png);
 }
 
@@ -172,7 +173,7 @@
 }
 
 /* Projeto 3 */
-.project-3 .computer-responsive{
+.project-3 .computer-permanent{
   background-image: url(../images/gta-landing-page-desktop.png);
 }
 
@@ -181,7 +182,7 @@
   background-image: url(../images/gta-landing-page-desktop.gif);
 }
 
-.project-3 .smartphone-responsive{
+.project-3 .smartphone-permanent{
   background-image: url(../images/gta-landing-page-smartphone.png);
 }
 
@@ -191,7 +192,7 @@
 }
 
 /* Projeto 4 */
-.project-4 .computer-responsive{
+.project-4 .computer-permanent{
   background-image: url(../images/search-github-user-desktop.png);
 }
 
@@ -200,7 +201,7 @@
   background-image: url(../images/search-github-user-desktop.gif);
 }
 
-.project-4 .smartphone-responsive{
+.project-4 .smartphone-permanent{
   background-image: url(../images/search-github-user-smartphone.png);
 }
 
@@ -210,7 +211,7 @@
 }
 
 /* Projeto 5 */
-.project-5 .computer-responsive{
+.project-5 .computer-permanent{
   background-image: url(../images/clique-dengue-desktop.png);
 }
 
@@ -219,7 +220,7 @@
   background-image: url(../images/clique-dengue-desktop.gif);
 }
 
-.project-5 .smartphone-responsive{
+.project-5 .smartphone-permanent{
   background-image: url(../images/clique-dengue-smartphone.png);
 }
 
@@ -229,7 +230,7 @@
 }
 
 /* Projeto 6 */
-.project-6 .computer-responsive{
+.project-6 .computer-permanent{
   background-image: url(../images/portfolio-desktop.png);
 }
 
@@ -238,7 +239,7 @@
   background-image: url(../images/portfolio-desktop.gif);
 }
 
-.project-6 .smartphone-responsive{
+.project-6 .smartphone-permanent{
   background-image: url(../images/portfolio-smartphone.png);
 }
 

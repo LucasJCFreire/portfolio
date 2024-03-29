@@ -102,8 +102,8 @@
 }
 
 .about-box-description ul li label {
-    height: 20px;
-    width: 20px;
+    height: 30px;
+    width: 30px;
     border: 2px solid var(--color-primary);
     border-radius: 50%;
     position: absolute;
@@ -147,10 +147,6 @@
     background-color: red;
 }
 
-#radio-3:checked~ul li .text-about-3 {
-    background-color: red;
-}
-
 .about .about-description input {
     display: none;
 }
@@ -161,8 +157,4 @@
 
 #radio-2:checked~.text-description .first-about-text {
     margin-top: -400px;
-}
-
-#radio-3:checked~.text-description .first-about-text {
-    margin-top: -800px;
 }
