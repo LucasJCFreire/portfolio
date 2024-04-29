@@ -4,55 +4,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Michroma&family=Roboto:wght@400;700;900&display=swap"
-        rel="stylesheet">
+    <link rel="shortcut icon" href="./src/images/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="./src/fonts/icomoon.css">
-    <link rel="stylesheet" href="./src/css/reset.css">
-    <link rel="stylesheet" href="./src/css/sections.css">
-    <link rel="stylesheet" href="./src/css/variables.css">
-    <link rel="stylesheet" href="./src/css/section-header.css">
+    <link rel="stylesheet" href="./src/css/globals.css">
+    <link rel="stylesheet" href="./src/css/header.css">
     <link rel="stylesheet" href="./src/css/section-home.css">
     <link rel="stylesheet" href="./src/css/section-about.css">
     <link rel="stylesheet" href="./src/css/section-technologies.css">
     <link rel="stylesheet" href="./src/css/section-projects.css">
-    <link rel="stylesheet" href="./src/css/responsive.css">
-    <link rel="shortcut icon" href="./src/images/favico.png" type="image/x-icon">
-    <title>Lucas Jones Developer</title>
+    <link rel="stylesheet" href="./src/css/section-contacts.css">
+    <title>Dev - Lucas Jones</title>
 </head>
 
 <body>
-    <section class="header" id="header">
-        <a href="#header" class="title">
-            <p>Lucas Jones Dev</p>
-        </a>
-        <nav class="header-navegation">
-            <input type="checkbox" id="menu-hamburguer">
-            <label for="menu-hamburguer">
-                <div class="menu">
-                    <span class="hamburguer"></span>
-                </div>
-            </label>
-            <ul>
-                <li><a href="#about">Sobre mim</a></li>
-                <li><a href="#technologies">Tecnologias</a></li>
-                <li><a href="#projects">Projetos</a></li>
-            </ul>
-        </nav>
-        <div class="theme-toggle">
-            <i class="icon-moon icon-theme"></i>
-        </div>
-    </section>
-    <section class="home">
-        <div class="home-message">
-            <div class="welcome-text">
-                <p>Olá</p>
-                <h1>Eu sou desenvolvedor<br>Web Front-end</h1>
-                <h2>Bem vindo ao meu portfólio.</h2>
-            </div>
-            <a href="#about">
-                <p>Mais sobre mim</p>
+    <header>
+        <nav>
+            <a href="#" aria-label="ir para início" title="ir para início">
+                <span class="icon-logo"></span>
             </a>
-            <div class="social-profiles icons">
+            <ul class="nav-menu" aria-expanded="false">
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">Sobre mim</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#technologies" class="nav-link">Tecnologias</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#projects" class="nav-link">Projetos</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contacts" class="nav-link">Contatos</a>
+                </li>
+            </ul>
+            <div class="btn-theme" aria-label="botão trocar tema">
+                <div class="indicator">
+                    <span class="icon-theme icon-sun"></span>
+                </div>
+            </div>
+            <div class="hamburger" aria-label="abrir menu-hamburguer" aria-controls="nav-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+
+    <section class="home">
+        <div class="home-image">
+            <img src="./src/images/home-image.png"
+                alt="imagem do autor estilizada com óculos de sol e fundo em movimento">
+        </div>
+        <div class="home-message">
+            <h1>Olá, eu sou Jones</h1>
+            <h2>Desenvolvedor Web Front-end</h2>
+            <h3>Bem vindo ao meu portfólio</h3>
+            <a class="home-btn" href="#about" title="Ir para seção #sobre mim" aria-label="Ir para seção sobre mim">Mais
+                sobre mim</a>
+            <div class="home-links">
                 <a target="_blank" aria-label="Download do currículo em pdf" title="Download do currículo em pdf"
                     href="https://raw.githubusercontent.com/LucasJCFreire/curriculo/main/LucasJCFreire-DesenvolvedorWebFrontEnd.pdf">
                     <i class="icon-card"></i>
@@ -74,45 +82,35 @@
                 </a>
             </div>
         </div>
-        <div class="home-image">
-            <img src="./src/images/jones.jpg" alt="">
-        </div>
     </section>
 
     <section class="about" id="about">
-        <div class="about-title">
-            <h1>Sobre <span>mim</span></h1>
-            <p>"Transformando paixão em código:<br>Um mergulho profissional rumo ao desenvolvimento"</p>
-        </div>
-        <div class="about-description">
+        <h2 class="about-title subtitle">
+            Sobre <span>mim</span>
+        </h2>
+        <div class="about-content">
+            <h3 class="subtitle-content">"Transformando paixão em código:<br>Um mergulho profissional rumo ao
+                desenvolvimento"</h3>
             <div class="about-box-description">
-                <input type="radio" name="radio-bt" checked id="radio-1">
-                <input type="radio" name="radio-bt" id="radio-2">
-                <ul>
-                    <li><label for="radio-1" class="text-about-1"></label></li>
-                    <li><label for="radio-2" class="text-about-2"></label></li>
-                </ul>
-                <img src="./src/images/jones.jpg" alt="">
-                <h2>Meu nome é Jones,<br><span>Lucas Jones</span></h2>
-                <div class="text-description">
-                    <div class="about-text first-about-text">
-                        <p>Meu primeiro contato com uma linguagem de programação foi com o VBA no Microsoft Excel. Na
-                            ocasião, nossa equipe precisava documentar as alterações nos processos produtivos, com o
-                            objetivo de consultas futuras, correções e sistematização. Desenvolvi um projeto em VBA, com
-                            uma interface intuitiva e tarefas automatizadas.
-
-                            Após essa experiência, decidi me aprofundar na área de desenvolvimento e programação, o que
-                            me levou a descobrir o desenvolvimento web. A cada estudo, fico mais impressionado com as
-                            possibilidades que essa área oferece.</p>
+                <div class="panel active">
+                    <p class="about-text">Primeiro Contato</p>
+                    <div class="panel-image-01 panel-image"></div>
+                    <div class="text-card">
+                            <p>Meu primeiro contato com uma linguagem de programação foi através do VBA no Excel. Na ocasião, nossa equipe precisava documentar as alterações nos processos produtivos, visando consultas futuras, correções e sistematização. Desenvolvi um projeto em VBA com uma interface intuitiva e tarefas automatizadas.<br>É interessante notar que, apesar de não estar diretamente ligado à área de programação, sempre busquei soluções tecnológicas para resolver problemas no meu papel como líder de produção.</p>
                     </div>
-                    <div class="about-text">
-                        <p> É interessante notar que, apesar de não estar diretamente na área de programação, sempre
-                            busquei soluções tecnológicas para resolver problemas no meu papel como líder de produção.
-
-                            Estou animado para iniciar novos projetos e continuo me dedicando para conhecer novas
-                            técnicas e linguagens. Explore a próxima seção do meu portfólio para conhecer as tecnologias
-                            com as quais estou atualmente familiarizado, e não hesite em entrar em contato comigo caso
-                            entenda que possa contribuir com seu trabalho.</p>
+                </div>
+                <div class="panel">
+                    <div class="panel-image-02 panel-image"></div>
+                    <p class="about-text">Fora da Caixa</p>
+                    <div class="text-card">
+                        <p>Após essa experiência, decidi me aprofundar na área de desenvolvimento e programação, o que me levou a descobrir o desenvolvimento web. Continuo dedicando-me a conhecer novas técnicas e linguagens e a cada estudo, fico mais impressionado com as possibilidades que essa área pode oferecer.</p>
+                    </div>
+                </div>
+                <div class="panel">
+                    <p class="about-text">Conte Comigo</p>
+                    <div class="panel-image-03 panel-image"></div>
+                    <div class="text-card">
+                        <p>Explore a próxima seção do meu portfólio para conhecer as tecnologias com as quais estou atualmente familiarizado, e não hesite em entrar em contato comigo caso entenda que possa contribuir com seu trabalho.</p>
                     </div>
                 </div>
             </div>
@@ -120,12 +118,13 @@
     </section>
 
     <section class="technologies" id="technologies">
-        <div class="technologies-title">
-            <h1>Tecnologias<span> / </span>Habilidades</h1>
-        </div>
-        <div class="technologies-description">
+        <h2 class="technologies-title subtitle">
+            Tecnologias<span> / </span>Habilidades
+        </h2>
+        <div class="technologies-content">
             <div class="technologies-hard-skills">
-                <h2 class="title-skills">Hard Skills</h2>
+                <h3 class="title-skills">Hard Skills</h3>
+
                 <div class="technologies-element-acordeon">
                     <div class="acordeon-fixed-box">
                         <div class="box-icon">
@@ -138,10 +137,10 @@
                         </div>
                     </div>
                     <div class="acordeon-box-click">
-                        <p class="acordeon-text">Com a conclusão dos módulos de HTML avançado do curso de especialização
-                            em desenvolvimento fullstack Dev Quest, estou confortável com a linguagem HTML e suas
-                            aplicações. Me considero apto para criar e estruturar conteúdos web nesta linguagem
-                            utilizando uma ampla variedade de recursos disponíveis.</p>
+                        <p class="acordeon-text">Com a conclusão dos módulos de HTML avançado do curso de
+                            especialização em desenvolvimento fullstack Dev Quest, estou confortável com a linguagem
+                            HTML e suas aplicações. Me considero apto para criar e estruturar conteúdos web nesta
+                            linguagem utilizando uma ampla variedade de recursos disponíveis.</p>
                     </div>
                 </div>
                 <div class="technologies-element-acordeon">
@@ -194,11 +193,10 @@
                         </div>
                     </div>
                     <div class="acordeon-box-click">
-                        <p class="acordeon-text">Desde que comecei minha jornada na formação de desenvolvedor, tenho
-                            seguido a recomendação de utilizar o Git para versionamento dos códigos. Entendo a
-                            finalidade e a importância dessa ferramenta e tenho me empenhado em utilizá-la ativamente
-                            para praticar. Como terminal, utilizo o Git Bash para realizar as operações de forma
-                            eficiente.</p>
+                        <p class="acordeon-text">Desde o início da minha jornada como desenvolvedor, tenho usado o Git
+                            para versionar meus projetos. Optei por migrar para o Linux para me familiarizar com o
+                            terminal, o que tem contribuído significativamente facilitando minhas tarefas de
+                            desenvolvimento.</p>
                     </div>
                 </div>
 
@@ -209,67 +207,105 @@
                             <div class="icon-minus"></div>
                         </div>
                         <div class="acordeon-title">
-                            <p>GRADUAÇÃO - EM PROCESSO</p>
+                            <p>FIGMA</p>
+                            <i class="icon-figma"></i>
+                        </div>
+                    </div>
+                    <div class="acordeon-box-click">
+                        <p class="acordeon-text">À medida que avanço nos estudos de programação, aprimorei minhas
+                            habilidades no uso da ferramenta Figma. Agora, sinto-me confortável em criar layouts
+                            consistentes e adaptáveis, fazendo uso de componentes, auto layout e constraints para
+                            otimizar o desenvolvimento web.</p>
+                    </div>
+                </div>
+
+                <div class="technologies-element-acordeon">
+                    <div class="acordeon-fixed-box">
+                        <div class="box-icon">
+                            <div class="icon-plus"></div>
+                            <div class="icon-minus"></div>
+                        </div>
+                        <div class="acordeon-title">
+                            <p>Graduando - ADS</p>
                             <i class="icon-graduation"></i>
                         </div>
                     </div>
                     <div class="acordeon-box-click">
-                        <div class="university-box">
-                            <p>Com a decisão de transição de carreira, iniciei minha graduação em Análise e
-                                Desenvolvimento de Sistemas com o objetivo de aprimorar minhas habilidades como
-                                programador. Essa decisão visa ampliar meus conhecimentos, construir uma base teórica
-                                sólida e desenvolver novas habilidades para minha nova jornada profissional. Ao
-                                mergulhar em disciplinas que abrangem desde algoritmos até
-                                desenvolvimento de software, estou me preparando para enfrentar os desafios do mercado
-                                de trabalho em constante evolução. </p>
+                        <p class="acordeon-text">Decidido a aprimorar minhas habilidades, dei início à minha graduação
+                            em Análise e Desenvolvimento de Sistemas. Este passo visa construir uma base teórica sólida
+                            e também desenvolver novas competências neste contexto profissional.</p>
+                    </div>
+                </div>
+
+                <div class="technologies-element-acordeon">
+                    <div class="acordeon-fixed-box">
+                        <div class="box-icon">
+                            <div class="icon-plus"></div>
+                            <div class="icon-minus"></div>
                         </div>
+                        <div class="acordeon-title">
+                            <p>Especialização Fullstack com mentoria</p>
+                            <i class="icon-devquest"></i>
+                        </div>
+                    </div>
+                    <div class="acordeon-box-click">
+                        <p class="acordeon-text">Buscando uma abordagem mais prática, ingressei no curso com mentoria do
+                            Dev Quest de Desenvolvimento Web Full Stack que conta com o suporte de profissionais
+                            experientes e monitorias semanais.</p>
                     </div>
                 </div>
             </div>
 
-            <div class="technologies-solft-skill">
-                <h2 class="title-skills">Soft Skills</h2>
-                <p class="subtitle-skills">Habilidades adquiridas como Líder de produção que considero transferiveis
-                    para área de programação</p>
-                <div class="soft-skills-box">
-                    <input type="radio" name="radio-btn" id="radio1" checked>
-                    <input type="radio" name="radio-btn" id="radio2">
-                    <input type="radio" name="radio-btn" id="radio3">
-                    <input type="radio" name="radio-btn" id="radio4">
-                    <ul>
-                        <li><label for="radio1" class="slide1"></label></li>
-                        <li><label for="radio2" class="slide2"></label></li>
-                        <li><label for="radio3" class="slide3"></label></li>
-                        <li><label for="radio4" class="slide4"></label></li>
-                    </ul>
-                    <div class="slide first">
-                        <h2>Trabalho em Equipe</h2>
-                        <div class="image">
-                            <img src="./src/images/Trabalho-em-equipe.jpg" alt="">
+            <div class="technologies-soft-skills">
+                <h3 class="title-skills">Soft Skills</h3>
+                <h4>Habilidades adquiridas como Líder de produção que considero transferiveis para área de
+                    programação
+                </h4>
+                <div class="slider-main">
+                    <div class="slider-top">
+                        <div class="soft-skill-type">
+                            <h5>Trabalho em Equipe</h5>
                         </div>
-                        <p>Experiência em trabalhar com equipes multidisciplinares e diferentes áreas para alcançar os
-                            objetivos organizacionais.</p>
+                        <div class="soft-skill-type">
+                            <h5>Pensamento analítico</h5>
+                        </div>
+                        <div class="soft-skill-type">
+                            <h5>Gestão do Tempo e Priorização</h5>
+                        </div>
+                        <div class="soft-skill-type">
+                            <h5>Adaptabilidade e Aprendizado Contínuo</h5>
+                        </div>
                     </div>
-                    <div class="slide">
-                        <h2>Pensamento Analítico</h2>
-                        <div class="image">
-                            <img src="./src/images/pensamento-analitico.jpg" alt="">
+
+                    <div class="slider-bottom">
+                        <div class="soft-skill-description">
+                            <img src="./src/images/soft-skill-03.png" alt="soft-skill-04">
+                            <p>Capacidade de se adaptar a novas tecnologias, metodologias e processos.</p>
                         </div>
-                        <p>Analisar informações e dados para compreender melhor um problema para tomada de decisão</p>
+                        <div class="soft-skill-description">
+                            <img src="./src/images/soft-skill-04.png" alt="soft-skill-03">
+                            <p>Experiência em lidar com múltiplas tarefas e priorizar atividades para alcançar
+                                metas.
+                            </p>
+                        </div>
+                        <div class="soft-skill-description">
+                            <img src="./src/images/soft-skill-02.png" alt="soft-skill-02">
+                            <p>Analisar informações e dados para compreender melhor um problema para tomada de
+                                decisão
+                            </p>
+                        </div>
+                        <div class="soft-skill-description">
+                            <img src="./src/images/soft-skill-01.png" alt="soft-skill-01">
+                            <p>Experiência em trabalhar com equipes multidisciplinares e diferentes áreas para
+                                alcançar
+                                os
+                                objetivos organizacionais.</p>
+                        </div>
                     </div>
-                    <div class="slide">
-                        <h2>Gestão do Tempo e Priorização</h2>
-                        <div class="image">
-                            <img src="./src/images/Gestao-tempo.jpg" alt="">
-                        </div>
-                        <p>Experiência em lidar com múltiplas tarefas e priorizar atividades para alcançar metas.</p>
-                    </div>
-                    <div class="slide">
-                        <h2>Adaptabilidade e Aprendizado Contínuo</h2>
-                        <div class="image">
-                            <img src="./src/images/adaptabilidade.jpg" alt="">
-                        </div>
-                        <p>Capacidade de se adaptar a novas tecnologias, metodologias e processos.</p>
+
+                    <div class="slider-control">
+                        <i class="icon-left button"></i>
+                        <i class="icon-right button"></i>
                     </div>
                 </div>
             </div>
@@ -277,183 +313,210 @@
     </section>
 
     <section class="projects" id="projects">
-        <div class="projects-title">
-            <h1>Projetos</h1>
-        </div>
-        <div class="projects-description">
-            <div class="project project-1">
+        <h2 class="projects-title subtitle">
+            Projetos
+        </h2>
+        <div class="projects-content">
+            <div class="project project-01">
                 <div class="project-title">
-                    <h2>Agência Landing Page</h2>
+                    <h3>Portfólio</h3>
                 </div>
                 <div class="project-image">
-                    <img class="computer-mask" src="./src/images/computador.png" alt="">
-                    <div class="computer-permanent"></div>
-                    <div class="computer-responsive"></div>
-                    <img class="smartphone-mask" src="./src/images/celular.png" alt="">
-                    <div class="smartphone-permanent"></div>
-                    <div class="smartphone-responsive"></div>
+                    <img class="desktop-mask" src="./src/images/desktop.png" alt="desktop-mockup">
+                    <div class="desktop-permanent"></div>
+                    <div class="desktop-responsive"></div>
+                    <img class="mobile-mask" src="./src/images/mobile.png" alt="mobile-mockup">
+                    <div class="mobile-permanent"></div>
+                    <div class="mobile-responsive"></div>
                 </div>
                 <div class="project-info">
-                    <p>Essa landing page é um exercício do curso de desenvolvedor web full stack Dev Quest. O objetivo
-                        do projeto foi criar uma landing page, utilizando grid e flex-box. A página contem icones
-                        interativos, menu hamburguer e é totalmente responsivo. Para criar essa interface foi utilizado
-                        <span>HTML</span>, <span>CSS</span> e <span>JavaScript</span>.</p>
-                    <div class="project-link">
-                        <a target="_blank" href="https://github.com/LucasJCFreire/lp-lemons-grid">
-                            <p>Repositório</p>
-                        </a>
-                        <a target="_blank" href="https://lucasjcfreire.github.io/lp-lemons-grid/">
-                            <p>Página</p>
-                        </a>
-                    </div>
+                    <p class="project-description">Este é o projeto desde portfólio. A organização das pastas foi cuidadosamente planejada para facilitar a manutenção. O objetivo foi
+                        desenvolver um portfólio com design clean, leve e responsivo, incluindo um tema escuro. Utilizei técnicas como grid e flexbox para criar o layout, aplicando as tecnologias <span>HTML</span>,
+                        <span>CSS</span> e <span>JavaScript</span>.
+                    </p>
+                </div>
+                <div class="project-link">
+                    <a aria-label="Clique para acessar repositório do projeto"
+                        title="Clique para acessar repositório do projeto" target="_blank"
+                        href="https://github.com/LucasJCFreire/portfolio">
+                        <i class="icon-repository"></i>
+                        <p>Repositório</p>
+                    </a>
+                    <a aria-label="Clique para acessar deploy do projeto" title="Clique para acessar deploy do projeto"
+                        target="_blank" href="https://lucasjcfreire.github.io/portfolio/">
+                        <i class="icon-page"></i>
+                        <p>Página</p>
+                    </a>
                 </div>
             </div>
 
-            <div class="project project-2">
+            <div class="project project-02">
                 <div class="project-title">
-                    <h2>Seleção X-men</h2>
+                    <h3>Clique Dengue</h3>
                 </div>
                 <div class="project-image">
-                    <img class="computer-mask" src="./src/images/computador.png" alt="">
-                    <div class="computer-permanent"></div>
-                    <div class="computer-responsive"></div>
-                    <img class="smartphone-mask" src="./src/images/celular.png" alt="">
-                    <div class="smartphone-permanent"></div>
-                    <div class="smartphone-responsive"></div>
+                    <img class="desktop-mask" src="./src/images/desktop.png" alt="desktop-mockup">
+                    <div class="desktop-permanent"></div>
+                    <div class="desktop-responsive"></div>
+                    <img class="mobile-mask" src="./src/images/mobile.png" alt="mobile-mockup">
+                    <div class="mobile-permanent"></div>
+                    <div class="mobile-responsive"></div>
                 </div>
                 <div class="project-info">
-                    <p>Este projeto foi criado com base nos recursos disponibilizados pelo curso de Desenvolvedor Web
-                        Full Stack Dev Quest. Consiste em uma seleção interativa de personagens do X-Men, que ao clicar
-                        em cada personagem são apresentadas suas habilidades, simulando um jogo. Para criar essa
-                        interface foi utilizado <span>HTML</span>, <span>CSS</span> e <span>JavaScript</span>.</p>
-                    <div class="project-link">
-                        <a target="_blank" href="https://github.com/LucasJCFreire/selecao-xmen">
-                            <p>Repositório</p>
-                        </a>
-                        <a target="_blank" href="https://lucasjcfreire.github.io/selecao-xmen/">
-                            <p>Página</p>
-                        </a>
-                    </div>
+                    <p class="project-description">Além do intuito informativo, este projeto teve como objetivo colocar em prática os conhecimentos adquiridos, criando um projeto autoral. O site conta com slides interativos de informações sobre a dengue, além de um quiz relacionado ao tema. Para a criação, foram utilizados
+                        <span>HTML</span>, <span>CSS</span> e <span>JavaScript</span>.
+                    </p>
+                </div>
+                <div class="project-link">
+                    <a aria-label="Clique para acessar repositório do projeto"
+                        title="Clique para acessar repositório do projeto" target="_blank"
+                        href="https://github.com/LucasJCFreire/CliqueDengue">
+                        <i class="icon-repository"></i>
+                        <p>Repositório</p>
+                    </a>
+                    <a aria-label="Clique para acessar deploy do projeto" title="Clique para acessar deploy do projeto"
+                        target="_blank" href="https://lucasjcfreire.github.io/CliqueDengue/">
+                        <i class="icon-page"></i>
+                        <p>Página</p>
+                    </a>
                 </div>
             </div>
 
-            <div class="project project-3">
+            <div class="project project-03">
                 <div class="project-title">
-                    <h2>GTA Landing Page</h2>
+                    <h3>Slider Game</h3>
                 </div>
                 <div class="project-image">
-                    <img class="computer-mask" src="./src/images/computador.png" alt="">
-                    <div class="computer-permanent"></div>
-                    <div class="computer-responsive"></div>
-                    <img class="smartphone-mask" src="./src/images/celular.png" alt="">
-                    <div class="smartphone-permanent"></div>
-                    <div class="smartphone-responsive"></div>
+                    <img class="desktop-mask" src="./src/images/desktop.png" alt="desktop-mockup">
+                    <div class="desktop-permanent"></div>
+                    <div class="desktop-responsive"></div>
+                    <img class="mobile-mask" src="./src/images/mobile.png" alt="mobile-mockup">
+                    <div class="mobile-permanent"></div>
+                    <div class="mobile-responsive"></div>
                 </div>
                 <div class="project-info">
-                    <p>Este projeto foi criado no evento oferecido pelo canal do youtube Dev em dobro chamado "Do zero
-                        ao programador contrato". Consiste na criação de uma landing page simulando a venda do jogo GTA
-                        V, com links interativos página responsiva. Para criar essa interface foi
-                        utilizado <span>HTML</span>, <span>CSS</span> e <span>JavaScript</span>.</p>
-                    <div class="project-link">
-                        <a target="_blank" href="https://github.com/LucasJCFreire/projeto-gta">
-                            <p>Repositório</p>
-                        </a>
-                        <a target="_blank" href="https://lucasjcfreire.github.io/projeto-gta/">
-                            <p>Página</p>
-                        </a>
-                    </div>
+                    <p class="project-description">Este projeto foi criado com o intuito de simular um teste em um
+                        contexto de games. O HTML e o CSS foi cuidadosamente pensado no contextos de tags e classes. Por exemplo, utilizei a tag picture para carregar uma imagem para desktop e outra para mobile. Para criar essa interface foi utilizado <span>HTML</span>, <span>CSS</span> e <span>JavaScript</span>.</p>
+                </div>
+                <div class="project-link">
+                    <a aria-label="Clique para acessar repositório do projeto"
+                        title="Clique para acessar repositório do projeto" target="_blank"
+                        href="https://github.com/LucasJCFreire/devquest-slider">
+                        <i class="icon-repository"></i>
+                        <p>Repositório</p>
+                    </a>
+                    <a aria-label="Clique para acessar deploy do projeto" title="Clique para acessar deploy do projeto"
+                        target="_blank" href="https://lucasjcfreire.github.io/devquest-slider/">
+                        <i class="icon-page"></i>
+                        <p>Página</p>
+                    </a>
                 </div>
             </div>
 
-            <div class="project project-4">
+            <div class="project project-04">
                 <div class="project-title">
-                    <h2>Search Github User</h2>
+                    <h3>Search Github User</h3>
                 </div>
                 <div class="project-image">
-                    <img class="computer-mask" src="./src/images/computador.png" alt="">
-                    <div class="computer-permanent"></div>
-                    <div class="computer-responsive"></div>
-                    <img class="smartphone-mask" src="./src/images/celular.png" alt="">
-                    <div class="smartphone-permanent"></div>
-                    <div class="smartphone-responsive"></div>
+                    <img class="desktop-mask" src="./src/images/desktop.png" alt="desktop-mockup">
+                    <div class="desktop-permanent"></div>
+                    <div class="desktop-responsive"></div>
+                    <img class="mobile-mask" src="./src/images/mobile.png" alt="mobile-mockup">
+                    <div class="mobile-permanent"></div>
+                    <div class="mobile-responsive"></div>
                 </div>
                 <div class="project-info">
-                    <p>Este projeto foi um exercício de JavaScript avançado proposto pelo curso de Desenvolvedor Web
+                    <p class="project-description">Este projeto foi um exercício de JavaScript avançado proposto pelo
+                        curso de Desenvolvedor Web
                         Full Stack Dev Quest. A página web busca informações do usuário por meio de requisições fetch e
                         apresenta os dados do usuário, seus repositórios e eventos recentes. Para o desenvolvimento,
                         foram utilizadas técnicas de <span>HTML</span>, <span>CSS</span> e <span>JavaScript</span>.</p>
-                    <div class="project-link">
-                        <a target="_blank" href="https://github.com/LucasJCFreire/search-github-user">
-                            <p>Repositório</p>
-                        </a>
-                        <a target="_blank" href="https://lucasjcfreire.github.io/search-github-user/">
-                            <p>Página</p>
-                        </a>
-                    </div>
+                </div>
+                <div class="project-link">
+                    <a aria-label="Clique para acessar repositório do projeto"
+                        title="Clique para acessar repositório do projeto" target="_blank"
+                        href="https://github.com/LucasJCFreire/search-github-user">
+                        <i class="icon-repository"></i>
+                        <p>Repositório</p>
+                    </a>
+                    <a aria-label="Clique para acessar deploy do projeto" title="Clique para acessar deploy do projeto"
+                        target="_blank" href="https://lucasjcfreire.github.io/search-github-user/">
+                        <i class="icon-page"></i>
+                        <p>Página</p>
+                    </a>
                 </div>
             </div>
 
-            <div class="project project-5">
+            <div class="project project-05">
                 <div class="project-title">
-                    <h2>Clique Dengue</h2>
+                    <h3>Seleção X-men</h3>
                 </div>
                 <div class="project-image">
-                    <img class="computer-mask" src="./src/images/computador.png" alt="">
-                    <div class="computer-permanent"></div>
-                    <div class="computer-responsive"></div>
-                    <img class="smartphone-mask" src="./src/images/celular.png" alt="">
-                    <div class="smartphone-permanent"></div>
-                    <div class="smartphone-responsive"></div>
+                    <img class="desktop-mask" src="./src/images/desktop.png" alt="desktop-mockup">
+                    <div class="desktop-permanent"></div>
+                    <div class="desktop-responsive"></div>
+                    <img class="mobile-mask" src="./src/images/mobile.png" alt="mobile-mockup">
+                    <div class="mobile-permanent"></div>
+                    <div class="mobile-responsive"></div>
                 </div>
                 <div class="project-info">
-                    <p>Além do intuito informativo, este projeto teve como objetivo colocar em prática os conhecimentos
-                        adquiridos, criando um projeto autoral. O site conta com slides interativos de informações sobre
-                        a dengue, além de um quiz relacionado ao tema. Para a criação, foram utilizados
-                        <span>HTML</span>, <span>CSS</span> e <span>JavaScript</span>.</p>
-                    <div class="project-link">
-                        <a target="_blank" href="https://github.com/LucasJCFreire/CliqueDengue">
-                            <p>Repositório</p>
-                        </a>
-                        <a target="_blank" href="https://lucasjcfreire.github.io/CliqueDengue/">
-                            <p>Página</p>
-                        </a>
-                    </div>
+                    <p class="project-description">Este projeto foi criado com base nos recursos disponibilizados pelo
+                        curso de Desenvolvedor Web
+                        Full Stack Dev Quest. Consiste em uma seleção interativa de personagens do X-Men, que ao clicar
+                        em cada personagem são apresentadas suas habilidades, simulando um jogo. Para o desenvolvimento,
+                        foram utilizadas técnicas de <span>HTML</span>, <span>CSS</span> e <span>JavaScript</span>.</p>
+                </div>
+                <div class="project-link">
+                    <a aria-label="Clique para acessar repositório do projeto"
+                        title="Clique para acessar repositório do projeto" target="_blank"
+                        href="https://github.com/LucasJCFreire/selecao-xmen">
+                        <i class="icon-repository"></i>
+                        <p>Repositório</p>
+                    </a>
+                    <a aria-label="Clique para acessar deploy do projeto" title="Clique para acessar deploy do projeto"
+                        target="_blank" href="https://lucasjcfreire.github.io/selecao-xmen/">
+                        <i class="icon-page"></i>
+                        <p>Página</p>
+                    </a>
                 </div>
             </div>
 
-            <div class="project project-6">
+            <div class="project project-06">
                 <div class="project-title">
-                    <h2>Portfólio</h2>
+                    <h3>Challenges</h3>
                 </div>
                 <div class="project-image">
-                    <img class="computer-mask" src="./src/images/computador.png" alt="">
-                    <div class="computer-permanent"></div>
-                    <div class="computer-responsive"></div>
-                    <img class="smartphone-mask" src="./src/images/celular.png" alt="">
-                    <div class="smartphone-permanent"></div>
-                    <div class="smartphone-responsive"></div>
+                    <img class="desktop-mask" src="./src/images/desktop.png" alt="desktop-mockup">
+                    <div class="desktop-permanent"></div>
+                    <div class="desktop-responsive"></div>
+                    <img class="mobile-mask" src="./src/images/mobile.png" alt="mobile-mockup">
+                    <div class="mobile-permanent"></div>
+                    <div class="mobile-responsive"></div>
                 </div>
                 <div class="project-info">
-                    <p>Este projeto conta com um histórico de commits no GitHub desde a criação da estrutura inicial. A
-                        organização das pastas foi cuidadosamente planejada para facilitar a manutenção. O objetivo foi
-                        desenvolver um portfólio com design clean, leve e responsivo, incluindo um tema escuro. Utilizei
-                        técnicas como grid e flexbox para criar o layout, aplicando as tecnologias <span>HTML</span>,
-                        <span>CSS</span> e <span>JavaScript</span>.</p>
-                    <div class="project-link">
-                        <a target="_blank" href="https://github.com/LucasJCFreire/portfolio">
-                            <p>Repositório</p>
-                        </a>
-                        <a target="_blank" href="https://lucasjcfreire.github.io/portfolio/">
-                            <p>Página</p>
-                        </a>
-                    </div>
+                    <p class="project-description">Repositório com diversos desafios que venho praticando desde meu
+                        início na área de programação. Há desafios do frontend mentor, devquest entre outros. Explore e veja minha evolução e práticas que costumo adotar em meus projetos.</p>
+                </div>
+                <div class="project-link">
+                    <a aria-label="Clique para acessar repositório do projeto"
+                        title="Clique para acessar repositório do projeto" target="_blank"
+                        href="https://github.com/LucasJCFreire/challenges">
+                        <i class="icon-repository"></i>
+                        <p>Repositório</p>
+                    </a>
                 </div>
             </div>
         </div>
+    </section>
 
-        <div class="projects-footer">
-            <p>Me envie uma mensagem!</p>
-            <div class="links icons">
+    <section class="contacts" id="contacts">
+        <h2 class="contacts-title subtitle">
+            Contatos
+        </h2>
+        <div class="contacts-content">
+            <h3 class="subtitle-content">Me envie uma mensagem</h3>
+            <a class="explicit-email" href="mailto:lucasjcfreire@outlook.com">lucasjcfreire@outlook.com</a>
+            <div class="contacts-links">
                 <a target="_blank" aria-label="Download do currículo em pdf" title="Download do currículo em pdf"
                     href="https://raw.githubusercontent.com/LucasJCFreire/curriculo/main/LucasJCFreire-DesenvolvedorWebFrontEnd.pdf">
                     <i class="icon-card"></i>
@@ -474,13 +537,13 @@
                     <i class="icon-envelope"></i>
                 </a>
             </div>
-            <p>lucasjcfreire@outlook.com</p>
         </div>
     </section>
-    <script type="text/javascript" src="./src/js/slider-soft-skills.js"></script>
-    <script type="text/javascript" src="./src/js/theme-toggle.js"></script>
-    <script type="text/javascript" src="./src/js/slider-about.js"></script>
-    <script type="text/javascript" src="./src/js/acordeon.js"></script>
+
+    <script src="./src/js/header-script.js"></script>
+    <script src="./src/js/about-script.js"></script>
+    <script src="./src/js/technologies-script.js"></script>
+
 </body>
 
 </html>

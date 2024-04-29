@@ -1,0 +1,91 @@
+/*  ==================== Variables ==================== */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap');
+
+:root {
+    --font-primary: "Roboto", sans-serif;
+    --font-heading: 'Michroma', monospace;
+
+    --font-size-small: 1.4rem;
+    --font-size-base: 1.6rem;
+    --font-size-medium: 2rem;
+    --font-size-large: 2.5rem;
+    --font-size-extra-large: 3rem;
+    --font-size-mega-large: 4rem;
+    --font-size-super-large: 5rem;
+
+    --color-primary: #1F2235;
+    --color-secundary: #F8F8FF;
+    --color-background: #e5e5e5;
+    --color-element-background: whitesmoke;
+
+    --color-highlight: #FF4A57;
+    --color-accent: whitesmoke;
+
+    --margin-top-menu: 70px;
+}
+
+.dark-mode:root {
+    --color-primary: #F8F8FF;
+    --color-secundary: #1F2235;
+    --color-background: #1F2235;
+    --color-element-background: #161c2d;
+}
+
+/*  ==================== Resets ==================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-primary);
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+/*  ==================== Basic Structure ==================== */
+html {
+    font-size: 62.5%;
+    font-family: var(--font-primary);
+    color: var(--color-primary);
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--color-background);
+    min-width: 350px;
+    transition: background-color 0.4s ease-in-out;
+}
+
+body > *:not(header) {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+/*  ==================== Sections Titles ==================== */
+.subtitle {
+    margin-top: var(--margin-top-menu);
+    font-family: var(--font-heading);
+    font-size: var(--font-size-large);
+    text-align: center;
+    text-shadow: 1px 1px 3px var(--color-primary);
+}
+
+.subtitle span {
+    color: var(--color-highlight);
+    text-shadow: 1px 1px 2px var(--color-highlight);
+}
+
+@media (max-width:578px) {
+    .subtitle {
+        font-size: var(--font-size-medium);
+    }
+}

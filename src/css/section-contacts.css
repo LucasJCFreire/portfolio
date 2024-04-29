@@ -1,0 +1,67 @@
+/*  ==================== Contact Styles ==================== */
+.contacts {
+    display: grid;
+    grid-template-areas:
+        "contacts-title"
+        "contacts-content";
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+}
+
+.contacts-title {
+    grid-area: contacts-title;
+}
+
+.contacts-content {
+    grid-area: contacts-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.subtitle-content {
+    font-family: var(--font-heading);
+    font-size: var(--font-size-medium);
+    text-align: center;
+    margin: 20px;
+}
+
+.contacts-content .explicit-email{
+    font-size: var(--font-size-base);
+    color: var(--color-highlight);
+}
+
+.contacts-links {
+    max-width: 600px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 50px;
+}
+
+.contacts-links a {
+    transition: 0.2s all ease-in-out;
+}
+
+.contacts-links a:hover {
+    scale: 1.07;
+    color: var(--color-highlight);
+}
+
+.contacts-links a i {
+    font-size: var(--font-size-super-large);
+}
+
+/*  ==================== Contacts Responsive Design ==================== */
+@media (max-width:578px) {
+    .contacts-links {
+        padding: 50px 10px;
+    }
+
+    .contacts-links a i {
+        font-size: var(--font-size-mega-large);
+    }
+    .contacts-content h3 {
+        font-size: var(--font-size-small);
+    }
+}

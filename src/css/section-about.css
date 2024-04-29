@@ -1,160 +1,251 @@
+/*  ==================== About Styles ==================== */
 .about {
+    margin-top: var(--margin-top-menu);
     display: grid;
     grid-template-areas:
         "about-title"
-        "about-description";
-    grid-template-rows: 170px minmax(580px, 650px);
+        "about-content";
+    grid-template-columns: 1fr;
+    grid-template-rows: auto calc(100vh - 106px);
 }
 
-.about .about-title {
+.about-title {
     grid-area: about-title;
-    padding: 20px 40px;
+}
+
+.about-content {
+    grid-area: about-content;
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
-.about .about-title h1 {
+.about-content .subtitle-content {
     font-family: var(--font-heading);
-    font-size: var(--font-size-extra-large);
-    font-weight: bold;
-    color: var(--color-primary);
-}
-
-.about .about-title h1 span {
-    color: var(--color-accent);
-}
-
-.about .about-title p {
-    font-family: var(--font-secundary);
-    font-size: var(--font-size-extra-large);
-    font-weight: bold;
-    color: var(--color-primary);
+    font-size: var(--font-size-medium);
     text-align: center;
-    margin: auto;
+    margin: 20px;
 }
 
-.about .about-description {
-    grid-area: about-description;
+.about-content .about-box-description {
+    display: flex;
+    width: 100vw;
+    max-width: 1000px;
+    height: calc(100% - 116px);
+    min-width: 350px;
+}
+
+.about-content .about-box-description .panel {
+    background-color: var(--color-element-background);
+    height: 100%;
+    border-radius: 50px;
+    cursor: pointer;
+    flex: 0.5;
+    margin: 0 10px;
+    position: relative;
+    transition: flex 0.7s ease-in;
+    overflow: hidden;
+    position: relative;
+}
+
+.about-content .about-box-description .panel .panel-image {
+    background-size: cover;
+    position: absolute;
+    bottom: 2%;
+    left: 55%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity .5s ease-out;
+    z-index: 999;
+}
+
+.panel .panel-image-01 {
+    background-image: url(../images/about-panel-01.png);
+    width: 200px;
+    height: 200px;
+}
+
+.panel .panel-image-02 {
+    background-image: url(../images/about-panel-02.png);
+    width: 230px;
+    height: 230px;
+}
+
+.panel .panel-image-03 {
+    background-image: url(../images/about-panel-03.png);
+    width: 180px;
+    height: 180px;
+}
+
+.about-content .about-box-description .panel.active div:first-of-type {
+    opacity: 1;
+    transition-delay: .5s;
+}
+
+.text-card{
+    position: absolute;
+    width: 80%;
+    height: 60%;
+    top: 5%;
+    left: 55%;
+    transform: translateX(-50%);
+    z-index: 1;
+    background-color: rgba(0, 0, 0, .03);
+    padding: 20px;
+    transition: left 1s ease;
+    transition-delay: 1s;
+    border-radius: 20px;
+    opacity: 0;
+    display: flex;
+    align-items: center;
+    transition: opacity .5s ease-out;
+}
+
+.about-content .about-box-description .panel.active .text-card{
+    opacity: 1;
+    transition-delay: .5s;
+}
+
+.about-content .about-box-description .panel.active {
+    flex: 3;
+}
+
+.about-content .about-box-description .text-card p {
+    opacity: 0;
+    font-size: var(--font-size-medium);
+    flex: 1;
+    text-align: justify;
+    transition-duration: 0s;
+}
+
+.about-content .about-box-description .panel.active .text-card p {
+    opacity: 1;
+    transition: opacity .7s ease-in;
+    transition-delay: .6s;
+}
+
+/* Styles Vertical text Panel */
+.about-content .about-box-description .panel .about-text{
+    rotate: -90deg;
+    font-size: var(--font-size-extra-large);
+    position: absolute;
     display: flex;
     justify-content: center;
-    margin: 10px;
-}
-
-.about .about-description .about-box-description {
-    box-shadow: 0 27px 49px -25px rgba(0, 0, 0, 0.3);
-    background-color: var(--color-element-background);
-    display: flex;
-    flex-direction: column;
-    border-radius: 30px;
-    position: relative;
-    max-width: 80%;
-    height: 580px;
-}
-
-.about .about-description .about-box-description img {
-    position: absolute;
-    left: -10%;
-    height: auto;
-    min-width: 180px;
-    width: 30%;
-    margin: auto 0;
+    align-items: center;
+    width: 0;
+    height: 0;
+    text-wrap: nowrap;
     top: 50%;
-    transform: translatey(-50%);
-    object-fit: cover;
+    left: 60px;
+    transform: translate(-50%, -50%);
+    text-shadow: 1px 1px 3px var(--color-primary);
 }
 
-.about .about-description h2 {
-    font-family: var(--font-secundary);
-    font-size: var(--font-size-large);
-    text-align: center;
-    font-weight: bold;
-    color: var(--color-primary);
-    margin: 15px;
-    align-self: center;
+.about-content .about-box-description .panel:hover .about-text {
+    color: var(--color-highlight);
+    text-shadow: 1px 1px 3px var(--color-highlight);
 }
 
-.about .about-description h2 span {
-    font-size: var(--font-size-extra-large);
-    color: var(--color-accent);
+.about-content .about-box-description .panel.active .about-text {
+    color: var(--color-highlight);
+    text-shadow: 1px 1px 3px var(--color-highlight);
 }
 
-.about .about-description .about-buttom {
-    display: flex;
-    align-self: center;
-    height: 60px;
+/*  ==================== About Responsive Design ==================== */
+@media(max-width: 992px) {
+    .about-content .subtitle-content {
+        font-size: var(--font-size-base);
+        margin: 20px 10px;
+    }
+
+    .about-content .about-box-description .text-card p {
+        font-size: var(--font-size-base);
+    }
+
+    .about-content .about-box-description .panel {
+        margin: 0 3px;
+    }
+
+    .text-card{
+        height: 60%;
+    }
+
+    .panel .panel-image-01 {
+        width: 180px;
+        height: 180px;
+    }
+    
+    .panel .panel-image-02 {
+        width: 210px;
+        height: 210px;
+    }
+    
+    .panel .panel-image-03 {
+        width: 160px;
+        height: 160px;
+    }
+
+    .about-content .about-box-description .panel .about-text{
+        left: 20px;
+    }
+
+    .about-content .about-box-description .panel .about-text{
+        left: 50px;
+    }
 }
 
-.about-box-description ul {
-    display: flex;
-    position: absolute;
-    padding: 10px;
-    align-self: center;
-    top: 90%;
+@media(max-width: 768px) {
+    .about-content .about-box-description .panel .about-text{
+        left: 45px;
+    }
 }
 
-.about-box-description ul li {
-    height: 20px;
-    width: 20px;
+@media(max-width: 678px) {
+    .about-content .about-box-description .panel .about-text{
+        left: 35px;
+    }
+
+    .text-card{
+        height: 70%;
+    }
 }
 
-.about-box-description ul li:not(:last-child) {
-    margin-right: 30px;
+@media(max-width: 568px) {
+    .about-content .subtitle-content {
+        font-size: var(--font-size-small);
+        margin: 20px 5px;
+    }
+
+    .about-content .about-box-description .panel {
+        border-radius: 20px;
+    }
+
+    .about-content .about-box-description .text-card p {
+        font-size: var(--font-size-small);
+    }
+
+    .panel .panel-image-01 {
+        width: 150px;
+        height: 150px;
+    }
+    
+    .panel .panel-image-02 {
+        width: 180px;
+        height: 180px;
+    }
+    
+    .panel .panel-image-03 {
+        width: 130px;
+        height: 130px;
+    }
+
+    .about-content .about-box-description .panel .about-text{
+        left: 30px;
+    }
 }
 
-.about-box-description ul li label {
-    height: 30px;
-    width: 30px;
-    border: 2px solid var(--color-primary);
-    border-radius: 50%;
-    position: absolute;
-    border-radius: 50%;
-    cursor: pointer;
-    background-color: var(--color-secundary);
-}
-
-.about .about-box-description .text-description {
-    height: 400px;
-    overflow: hidden;
-    width: 80%;
-    align-self: flex-end;
-    padding: 20px;
-}
-
-.about .about-description .about-text {
-    height: 400px;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-}
-
-.about .about-description .about-text p {
-    font-family: var(--font-secundary);
-    font-size: var(--font-size-large);
-    color: var(--color-primary);
-    font-weight: 400;
-    text-align: justify;
-}
-
-.about .about-description p span {
-    color: var(--color-accent);
-}
-
-#radio-1:checked~ul li .text-about-1 {
-    background-color: red;
-}
-
-#radio-2:checked~ul li .text-about-2 {
-    background-color: red;
-}
-
-.about .about-description input {
-    display: none;
-}
-
-#radio-1:checked~.text-description .first-about-text {
-    margin-top: 0px;
-}
-
-#radio-2:checked~.text-description .first-about-text {
-    margin-top: -400px;
+@media(max-width: 450px) {
+    .about-content .about-box-description .panel .about-text{
+        left: 20px;
+    }
 }

@@ -1,265 +1,273 @@
+/*  ==================== Projects Styles ==================== */
 .projects {
+    margin-top: var(--margin-top-menu);
     display: grid;
     grid-template-areas:
-      "projects-title"
-      "projects-description"
-      "projects-footer";
-    grid-template-rows: 80px auto 200px;
-  }
-  
-  .projects .projects-title {
-    grid-area: projects-title;
-    padding: 20px 40px;
+        "projects-title"
+        "projects-content";
+    grid-template-columns: 1fr;
 }
 
-.projects .projects-title h1 {
-    font-family: var(--font-heading);
-    font-size: var(--font-size-extra-large);
-    font-weight: bold;
+.projects-title {
+    grid-area: projects-title;
+}
+
+.projects-content {
+    grid-area: projects-content;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, 350px);
+    justify-content: space-evenly;
+    margin-top: 10px;
+}
+
+.projects-content .project {
+    margin: 0 10px;
+    max-width: 350px;
+    display: flex;
+    flex-direction: column;
+}
+
+.projects-content .project h3 {
+    text-align: center;
+    font-size: var(--font-size-medium);
+    margin: 15px 0;
+}
+
+.projects-content .project-image {
+    position: relative;
+    height: 330px;
+}
+
+.projects-content .desktop-mask {
+    cursor: help;
+    position: absolute;
+    height: auto;
+    width: 350px;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.desktop-permanent,
+.projects-content .desktop-responsive {
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 174px;
+    top: 12px;
+    left: 12px;
+    width: 308px;
+    transition: 0.5s ease-in-out;
+}
+
+.projects-content .mobile-mask {
+    cursor: help;
+    position: absolute;
+    height: auto;
+    width: 100px;
+    bottom: 0;
+    right: 10px;
+    z-index: 2;
+}
+
+.mobile-permanent,
+.projects-content .mobile-responsive {
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 147px;
+    bottom: 14px;
+    right: 14px;
+    width: 92px;
+    z-index: 1;
+    transition: 0.5s ease-in-out;
+}
+
+.projects-content .project .project-info {
+    padding: 20px;
+}
+
+.projects-content .project .project-info .project-description {
+    font-family: var(--font-secundary);
+    font-size: var(--font-size-base);
     color: var(--color-primary);
 }
 
-.projects .projects-description{
-  grid-area: projects-description;
-  display: grid;
-  gap: 20px;
-  grid-template-columns: repeat(auto-fit, 350px);
-  justify-content: space-evenly;
+.projects-content .project .project-info p span {
+    color: var(--color-highlight);
 }
 
-.projects .projects-description .project{
-  margin: 10px;
-  max-width: 350px;
-  display: flex;
-  flex-direction: column;
+.projects-content .project .project-link {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: end;
+    flex: 1;
+    padding: 20px 0;
 }
 
-.projects .projects-description .project h2{
-  text-align: center;
-  font-family: var(--font-primary);
-  font-size: var(--font-size-medium);
-  color: var(--color-primary);
-  margin: 15px 0;
+.projects-content .project .project-link a {
+    background-color: var(--color-primary);
+    color: var(--color-secundary);
+    font-size: var(--font-size-base);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+    height: 40px;
+    width: 140px;
+    border-radius: 20px;
+    transition: .2s ease-in-out;
 }
 
-.projects .projects-description .project .project-image{
-  position: relative;
-  height: 330px;
+.projects-content .project .project-link a:hover {
+    background-color: var(--color-highlight);
 }
 
-.projects-description .project .computer-mask{
-  cursor: help;
-  position: absolute;
-  height: auto;
-  width: 350px;
-  top: 0;
-  left: 0;
-  z-index: 1;
-}
-.computer-permanent,
-.projects-description .project .computer-responsive{
-  position: absolute;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-  height: 198px;
-  top: 16px;
-  left: 6px;
-  width: 318px;
-  transition: 0.5s ease-in-out;
+.projects-content .project .project-link a > * {
+    transition: .2s ease-in-out;
 }
 
-.projects-description .project .smartphone-mask{
-  cursor: help;
-  position: absolute;
-  height: auto;
-  width: 100px;
-  bottom: 0;
-  right: 10px;
-  z-index: 2;
+.projects-content .project .project-link a:hover > * {
+    color: var(--color-accent);
 }
 
-.smartphone-permanent,
-.projects-description .project .smartphone-responsive{
-  position: absolute;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-  height: 150px;
-  bottom: 12px;
-  right: 12px;
-  width: 95px;
-  z-index: 1;
-  transition: 0.5s ease-in-out;
+.projects-content .project .project-link a p {
+    color: var(--color-secundary);
 }
 
-.projects .projects-description .project .project-info{
-  padding: 20px;
+.projects-content .project .project-link a i {
+    margin-right: 10px;
+    font-size: var(--font-size-medium);
+    color: var(--color-secundary);
 }
 
-.projects .projects-description .project .project-info p{
-  font-family: var(--font-secundary);
-  font-size: var(--font-size-base);
-  color: var(--color-primary);
+/*  ==================== Projects Images Links ==================== */
+
+/* Projeto 01 */
+.project-01 .desktop-permanent {
+    background-image: url(../images/project-01-desktop.png);
 }
 
-.projects .projects-description .project .project-info p span{
-  color: var(--color-accent);
+.project-01 .desktop-mask:hover~.desktop-responsive {
+    transition: background-image 0.5s ease-in-out;
+    background-image: url(../images/project-01-desktop.gif);
 }
 
-.projects .projects-description .project .project-info .project-link{
-  display: flex;
-  justify-content: space-evenly;
+.project-01 .mobile-permanent {
+    background-image: url(../images/project-01-mobile.png);
 }
 
-.projects .projects-description .project .project-info .project-link a{
-  background-color: var(--color-primary);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 15px;
-  height: 40px;
-  width: 100px;
-  border: 1px solid var(--color-primary);
-  border-radius: 20px;
-  transition: 0.3s ease-in-out;
+.project-01 .mobile-mask:hover~.mobile-responsive {
+    transition: background-image 0.5s ease-in-out;
+    background-image: url(../images/project-01-mobile.gif);
 }
 
-.projects .projects-description .project .project-info .project-link a:hover{
-  opacity: 0.8;
-  background-color: var(--color-accent);
+/* Projeto 02 */
+.project-02 .desktop-permanent {
+    background-image: url(../images/project-02-desktop.png);
 }
 
-.projects .projects-description .project .project-info .project-link a p{
-  color: var(--color-secundary);
+.project-02 .desktop-mask:hover~.desktop-responsive {
+    transition: background-image 0.5s ease-in-out;
+    background-image: url(../images/project-02-desktop.gif);
 }
 
-/* Projeto 1 */
-.project-1 .computer-permanent{
-  background-image: url(../images/agencia-xyz-desktop.png);
+.project-02 .mobile-permanent {
+    background-image: url(../images/project-02-mobile.png);
 }
 
-.project-1 .computer-mask:hover~ .computer-responsive{
-  transition: background-image 0.5s ease-in-out;
-  background-image: url(../images/agencia-xyz-desktop.gif);
+.project-02 .mobile-mask:hover~.mobile-responsive {
+    transition: background-image 0.5s ease-in-out;
+    background-image: url(../images/project-02-mobile.gif);
 }
 
-.project-1 .smartphone-permanent{
-  background-image: url(../images/agencia-xyz-smartphone.png);
+/* Projeto 03 */
+.project-03 .desktop-permanent {
+    background-image: url(../images/project-03-desktop.png);
 }
 
-.project-1 .smartphone-mask:hover~  .smartphone-responsive{
-  transition: background-image 0.5s ease-in-out;
-  background-image: url(../images/agencia-xyz-smartphone.gif);
+.project-03 .desktop-mask:hover~.desktop-responsive {
+    transition: background-image 0.5s ease-in-out;
+    background-image: url(../images/project-03-desktop.gif);
 }
 
-/* projeto 2 */
-.project-2 .computer-permanent{
-  background-image: url(../images/x-men-desktop.png);
+.project-03 .mobile-permanent {
+    background-image: url(../images/project-03-mobile.png);
 }
 
-.project-2 .computer-mask:hover~ .computer-responsive{
-  transition: background-image 0.5s ease-in-out;
-  background-image: url(../images/x-men-desktop.gif);
+.project-03 .mobile-mask:hover~.mobile-responsive {
+    transition: background-image 0.5s ease-in-out;
+    background-image: url(../images/project-03-mobile.gif);
 }
 
-.project-2 .smartphone-permanent{
-  background-image: url(../images/x-men-smartphone.png);
+/* Projeto 04 */
+.project-04 .desktop-permanent {
+    background-image: url(../images/project-04-desktop.png);
 }
 
-.project-2 .smartphone-mask:hover~  .smartphone-responsive{
-  transition: background-image 0.5s ease-in-out;
-  background-image: url(../images/x-men-smartphone.gif);
+.project-04 .desktop-mask:hover~.desktop-responsive {
+    transition: background-image 0.5s ease-in-out;
+    background-image: url(../images/project-04-desktop.gif);
 }
 
-/* Projeto 3 */
-.project-3 .computer-permanent{
-  background-image: url(../images/gta-landing-page-desktop.png);
+.project-04 .mobile-permanent {
+    background-image: url(../images/project-04-mobile.png);
 }
 
-.project-3 .computer-mask:hover~ .computer-responsive{
-  transition: background-image 0.5s ease-in-out;
-  background-image: url(../images/gta-landing-page-desktop.gif);
+.project-04 .mobile-mask:hover~.mobile-responsive {
+    transition: background-image 0.5s ease-in-out;
+    background-image: url(../images/project-04-mobile.gif);
 }
 
-.project-3 .smartphone-permanent{
-  background-image: url(../images/gta-landing-page-smartphone.png);
+/* Projeto 05 */
+.project-05 .desktop-permanent {
+    background-image: url(../images/project-05-desktop.png);
 }
 
-.project-3 .smartphone-mask:hover~  .smartphone-responsive{
-  transition: background-image 0.5s ease-in-out;
-  background-image: url(../images/gta-landing-page-smartphone.gif);
+.project-05 .desktop-mask:hover~.desktop-responsive {
+    transition: background-image 0.5s ease-in-out;
+    background-image: url(../images/project-05-desktop.gif);
 }
 
-/* Projeto 4 */
-.project-4 .computer-permanent{
-  background-image: url(../images/search-github-user-desktop.png);
+.project-05 .mobile-permanent {
+    background-image: url(../images/project-05-mobile.png);
 }
 
-.project-4 .computer-mask:hover~ .computer-responsive{
-  transition: background-image 0.5s ease-in-out;
-  background-image: url(../images/search-github-user-desktop.gif);
+.project-05 .mobile-mask:hover~.mobile-responsive {
+    transition: background-image 0.5s ease-in-out;
+    background-image: url(../images/project-05-mobile.gif);
 }
 
-.project-4 .smartphone-permanent{
-  background-image: url(../images/search-github-user-smartphone.png);
+/* projeto 06 */
+.project-06 .desktop-permanent {
+    background-image: url(../images/project-06-desktop.png);
 }
 
-.project-4 .smartphone-mask:hover~  .smartphone-responsive{
-  transition: background-image 0.5s ease-in-out;
-  background-image: url(../images/search-github-user-smartphone.gif);
+.project-06 .desktop-mask:hover~.desktop-responsive {
+    transition: background-image 0.5s ease-in-out;
+    background-image: url(../images/project-06-desktop.gif);
 }
 
-/* Projeto 5 */
-.project-5 .computer-permanent{
-  background-image: url(../images/clique-dengue-desktop.png);
+.project-06 .mobile-permanent {
+    background-image: url(../images/project-06-mobile.png);
 }
 
-.project-5 .computer-mask:hover~ .computer-responsive{
-  transition: background-image 0.5s ease-in-out;
-  background-image: url(../images/clique-dengue-desktop.gif);
+.project-06 .mobile-mask:hover~.mobile-responsive {
+    transition: background-image 0.5s ease-in-out;
+    background-image: url(../images/project-06-mobile.gif);
 }
 
-.project-5 .smartphone-permanent{
-  background-image: url(../images/clique-dengue-smartphone.png);
+@media (max-width:578px) {
+    .projects-content .project {
+        margin: 0 5px;
+    }
 }
 
-.project-5 .smartphone-mask:hover~  .smartphone-responsive{
-  transition: background-image 0.5s ease-in-out;
-  background-image: url(../images/clique-dengue-smartphone.gif);
-}
-
-/* Projeto 6 */
-.project-6 .computer-permanent{
-  background-image: url(../images/portfolio-desktop.png);
-}
-
-.project-6 .computer-mask:hover~ .computer-responsive{
-  transition: background-image 0.5s ease-in-out;
-  background-image: url(../images/portfolio-desktop.gif);
-}
-
-.project-6 .smartphone-permanent{
-  background-image: url(../images/portfolio-smartphone.png);
-}
-
-.project-6 .smartphone-mask:hover~  .smartphone-responsive{
-  transition: background-image 0.5s ease-in-out;
-  background-image: url(../images/portfolio-smartphone.gif);
-}
-
-.projects .projects-footer{
-  grid-area: projects-footer;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.projects .projects-footer p{
-  font-family: var(--font-secundary);
-  font-size: var(--font-size-medium);
-  color: var(--color-accent);
-  font-weight: 500;
-  margin: 10px;
-}
+/*
+Tamanho padrão para imagens
+Desktop - 308px x 174px
+Mobile - 92px x 147px
+*/
