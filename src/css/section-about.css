@@ -46,7 +46,7 @@
     transition: flex 0.7s ease-in;
     overflow: hidden;
     position: relative;
-    box-shadow: 2px 2px 2px var(--color-primary);
+    box-shadow: 2px 2px 5px var(--color-primary);
 }
 
 .about-content .about-box-description .panel .panel-image {
