@@ -6,7 +6,7 @@
         "home-image"
         "home-message";
     grid-template-columns: 1fr;
-    grid-template-rows: calc(55vh - 70px) 45vh;
+    grid-template-rows: calc(55vh - 70px) auto;
 }
 
 .home-image {
@@ -75,6 +75,7 @@
     transition: 0.2s ease-in-out;
     margin: 15px 0;
     text-shadow: .5px .5px 1px var(--color-secundary);
+    box-shadow: 0px 0px 10px var(--color-primary);
 }
 
 .home-message .home-btn:hover {
