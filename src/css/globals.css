@@ -1,9 +1,19 @@
 /*  ==================== Variables ==================== */
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap');
 
+@font-face {
+    font-family: font-local-michroma;
+    src: url('../fonts/Michroma/Michroma-Regular.ttf');
+}
+
+@font-face {
+    font-family: font-local-orbitron;
+    src: url(../fonts/Orbitron/Orbitron-VariableFont_wght.ttf);
+}
+
 :root {
-    --font-primary: "Roboto", sans-serif;
-    --font-heading: 'Michroma', monospace;
+    --font-primary: "Roboto", "Helvetica", sans-serif;
+    --font-heading: 'font-local-michroma', 'font-local-orbitron', monospace;
 
     --font-size-small: 1.4rem;
     --font-size-base: 1.6rem;

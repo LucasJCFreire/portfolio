@@ -162,7 +162,7 @@
 .slider-main {
     max-width: 500px;
     width: 100%;
-    height: 400px;
+    height: 500px;
     position: relative;
     overflow: hidden;
     background-color: var(--color-element-background);
