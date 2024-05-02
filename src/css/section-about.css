@@ -29,10 +29,10 @@
 
 .about-content .about-box-description {
     display: flex;
-    width: 100vw;
+    width: 95%;
     max-width: 1000px;
     height: 700px;
-    min-width: 350px;
+    min-width: 330px;
 }
 
 .about-content .about-box-description .panel {
@@ -203,6 +203,7 @@
 
 @media(max-width: 678px) {
     .about-content .about-box-description .panel .about-text{
+        font-size: var(--font-size-medium);
         left: 35px;
     }
 

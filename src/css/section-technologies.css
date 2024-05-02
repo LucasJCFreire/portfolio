@@ -82,8 +82,8 @@
     flex: 1;
     padding: 0 30px;
     justify-content: space-between;
-    font-family: var(--font-secundary);
-    font-size: var(--font-size-large);
+    font-family: var(--font-heading);
+    font-size: var(--font-size-medium);
     color: var(--color-primary);
     font-weight: bold;
 }
@@ -105,7 +105,7 @@
 }
 
 .technologies-hard-skills .technologies-element-acordeon .acordeon-box-click .acordeon-text {
-    font-family: var(--font-secundary);
+    font-family: var(--font-primary);
     font-size: var(--font-size-medium);
     color: var(--color-primary);
     margin: 10px;
@@ -128,20 +128,6 @@
 
 .technologies-hard-skills .technologies-element-acordeon .acordeon-fixed-box.abaConteudoAberto .box-icon {
     transform: rotatez(180deg);
-}
-
-.university-box {
-    display: flex;
-    margin: 0 20px;
-    text-align: justify;
-    align-items: center;
-}
-
-.university-box p {
-    font-family: var(--font-secundary);
-    font-size: var(--font-size-medium);
-    color: var(--color-primary);
-    margin: 10px;
 }
 
 /*  ==================== Soft Skill Styles ==================== */
@@ -271,10 +257,6 @@
 @media (max-width: 578px) {
     .technologies-content {
         grid-template-columns: repeat(auto-fit, 440px);
-    }
-
-    .technologies-hard-skills .technologies-element-acordeon {
-        min-width: 350px;
     }
     
     .acordeon-fixed-box .acordeon-title {
